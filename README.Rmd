@@ -22,6 +22,14 @@ knitr::opts_chunk$set(
 
 The goal of SDS270PROJ2 is to ...
 
+## Purpose
+
+The purpose of this package is to...
+
+## Target Dudience
+
+The target audience for this package is...
+
 ## Installation
 
 You can install the development version of SDS270PROJ2 like so:
