@@ -13,3 +13,8 @@ test_that("find the area of a triangle correctly", {
 test_that("find the area of a trapezoid correctly", {
   expect_equal(area_trapezoid(2,3,4), 10)
 })
+
+test_that("find the area of a pentagon correctly", {
+  expect_equal(area_triangle(2,2), 2)
+})
+
