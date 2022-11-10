@@ -2,8 +2,8 @@
 #'
 #' A simple function to find the area of a square.
 #'
-#' @param x Width of the square (number)
-#' @param y Height of the square (number)
+#' @param x Width of the square (positive number)
+#' @param y Height of the square (positive number)
 #'
 #' @return The area of a square with width x and height y.
 #' @export
@@ -11,10 +11,8 @@
 #' @examples
 #' area_square(5,4)
 area_square <- function(x,y){
-  if (x < 0){
-    return('You cant have a negative width you silly goose!')
-  } else if(y < 0){
-    return("You cant have a negative height you silly goose!")
+  if (x < 0 | y < 0 ){
+    stop('Squares must have positive widths and heights!', call. = FALSE)
   }
   else{
     z <- x*y
