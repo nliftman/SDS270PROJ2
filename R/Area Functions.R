@@ -11,8 +11,8 @@
 #' @examples
 #' area_square(5,4)
 area_square <- function(x,y){
-  if (x < 0 | y < 0 ){
-    stop('Squares must have positive widths and heights!', call. = FALSE)
+  if ((!is.numeric(x)) | (!is.numeric(y)) | x < 0 | y < 0 ){
+    stop('Squares must have positive and numeric widths and heights!', call. = FALSE)
   }
   else{
     z <- x*y
@@ -32,8 +32,8 @@ area_square <- function(x,y){
 #' @examples
 #' area_circle(7)
 area_circle <- function(x){
-  if (x < 0){
-    stop("Circles must have a positive radius!")
+  if (!is.numeric(x) | x < 0){
+    stop("Circles must have a positive and numeric radius!")
   } else{
     z <- pi*x^2
     return(z)
@@ -54,8 +54,8 @@ area_circle <- function(x){
 #' @examples
 #' area_triangle(2, 4)
 area_triangle <- function(x,y){
-  if (x < 0 | y < 0 ){
-    stop("The base and height of a triangle must be positive")
+  if (!is.numeric(x) | !is.numeric(y) | x < 0 | y < 0 ){
+    stop("The base and height of a triangle must be positive and numeric")
     }
   else{
     z <- (x*y)/2
