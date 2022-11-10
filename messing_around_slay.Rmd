@@ -6,7 +6,7 @@ output: pdf_document
 ---
 area_square <- function(x,y){
   if (x < 0 | y < 0 ){
-    stop('Side length must be positive!', call. = FALSE)
+    stop('Squares must have positive widths and heights!', call. = FALSE)
   }
   else{
     z <- x*y

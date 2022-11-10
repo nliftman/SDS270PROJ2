@@ -33,7 +33,7 @@ area_square <- function(x,y){
 #' area_circle(7)
 area_circle <- function(x){
   if (x < 0){
-    return("You cant have a negative radius you silly goose!")
+    stop("Circles must have a positive radius!")
   } else{
     z <- pi*x^2
     return(z)
@@ -54,11 +54,10 @@ area_circle <- function(x){
 #' @examples
 #' area_triangle(2, 4)
 area_triangle <- function(x,y){
-  if (x < 0){
-    return("You cant have a negative base you silly little man!")
-  } else if (y < 0) {
-    return("You cant have a negative height you silly friend!")
-  } else{
+  if (x < 0 | y < 0 ){
+    stop("The base and height of a triangle must be positive")
+    }
+  else{
     z <- (x*y)/2
     return(z)
   }
