@@ -130,3 +130,23 @@ area_hexagon <- function(x){
 }
 
 
+#' Area of a Octogon
+#'
+#' A simple function to find the area of a octogon
+#'
+#' @param x Length of one side of the octogon (positive number)
+#'
+#' @return The area of a octogon with side lengths x.
+#' @export
+#'
+#' @examples
+#' area_octogon(3)
+area_octogon <- function(x){
+  if (!is.numeric(x) | x < 0 ){
+    stop("Side lengths of octogons must be positive and numeric!")
+  }
+  else{
+    t <- {(2*(1+sqrt(2)))}*x^2
+    return(t)
+  }
+}

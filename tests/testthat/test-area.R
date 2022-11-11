@@ -21,3 +21,7 @@ test_that("find the area of a pentagon correctly", {
 test_that("find the area of a hexagon correctly", {
   expect_equal(area_hexagon(3), 23.382686)
 })
+
+test_that("find the area of a octogon correctly", {
+  expect_equal(area_octogon(3), 43.455844)
+})
