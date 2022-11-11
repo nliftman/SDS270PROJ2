@@ -23,5 +23,5 @@ test_that("find the area of a hexagon correctly", {
 })
 
 test_that("find the area of a octogon correctly", {
-  expect_equal(area_octogon(3), 43.455844)
+  expect_equal(area_octagon(3), 43.455844)
 })
