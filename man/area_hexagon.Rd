@@ -2,18 +2,18 @@
 % Please edit documentation in R/area-functions.R
 \name{area_hexagon}
 \alias{area_hexagon}
-\title{Area of a Hexagon}
+\title{Area of a Regular Hexagon}
 \usage{
 area_hexagon(x)
 }
 \arguments{
-\item{x}{Length of one side of the hexagon. (positive number)}
+\item{x}{Length of one side of the regular hexagon. (positive number)}
 }
 \value{
-The area of a hexagon with side lengths x.
+The area of a regular hexagon with side lengths x.
 }
 \description{
-A simple function to find the area of a hexagon
+A simple function to find the area of a regular hexagon
 }
 \examples{
 area_hexagon(3)

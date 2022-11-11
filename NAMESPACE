@@ -2,7 +2,7 @@
 
 export(area_circle)
 export(area_hexagon)
-export(area_octogon)
+export(area_octagon)
 export(area_pentagon)
 export(area_square)
 export(area_trapezoid)

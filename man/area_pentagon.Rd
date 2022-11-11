@@ -2,20 +2,20 @@
 % Please edit documentation in R/area-functions.R
 \name{area_pentagon}
 \alias{area_pentagon}
-\title{Area of a Pentagon}
+\title{Area of a Regular Pentagon}
 \usage{
 area_pentagon(x, y)
 }
 \arguments{
-\item{x}{Length of one side of the pentagon, also known as a perimeter. (positive number)}
+\item{x}{Length of one side of the regular pentagon, also known as a perimeter. (positive number)}
 
-\item{y}{Length from the center of one side of the pentagon to the center, also known as the apothem. (positive number)}
+\item{y}{Length from the center of one side of the regular pentagon to the center, also known as the apothem. (positive number)}
 }
 \value{
-The area of a pentagon with a perimeter x and apothem y.
+The area of a regular pentagon with a perimeter x and apothem y.
 }
 \description{
-A simple function to find the area of a pentagon
+A simple function to find the area of a regular pentagon
 }
 \examples{
 area_pentagon(2, 3)

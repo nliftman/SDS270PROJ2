@@ -45,7 +45,7 @@ area_circle <- function(x){
 #'
 #' A simple function to find the area of a triangle.
 #'
-#' @param x Length of the base of the triangle. (posotive number)
+#' @param x Length of the base of the triangle. (positive number)
 #' @param y Height of the triangle, which creates a 90 degree angle with the base. (positive number)
 #'
 #' @return The area of a triangle with a base of x and height of y.
@@ -63,15 +63,15 @@ area_triangle <- function(x,y){
   }
 }
 
-#' Area of a Trapezoid
+#' Area of a Regular Trapezoid
 #'
-#' A simple function to find the area of a trapezoid
+#' A simple function to find the area of a regular trapezoid
 #'
-#' @param x Length of the smaller base of the trapezoid. (positive number)
-#' @param y Length of the larger base of the trapezoid. (positive number)
-#' @param z Height of the trapezoid, which creates a 90 degree angle between both bases. (positive number)
+#' @param x Length of the smaller base of the regular trapezoid. (positive number)
+#' @param y Length of the larger base of the regular trapezoid. (positive number)
+#' @param z Height of the regular trapezoid, which creates a 90 degree angle between both bases. (positive number)
 #'
-#' @return The area of a trapezoid with a bases of x and y and height of z.
+#' @return The area of a regular trapezoid with a bases of x and y and height of z.
 #' @export
 #'
 #' @examples
@@ -86,14 +86,14 @@ area_trapezoid <- function(x,y, z){
   }
 }
 
-#' Area of a Pentagon
+#' Area of a Regular Pentagon
 #'
-#' A simple function to find the area of a pentagon
+#' A simple function to find the area of a regular pentagon
 #'
-#' @param x Length of one side of the pentagon, also known as a perimeter. (positive number)
-#' @param y Length from the center of one side of the pentagon to the center, also known as the apothem. (positive number)
+#' @param x Length of one side of the regular pentagon, also known as a perimeter. (positive number)
+#' @param y Length from the center of one side of the regular pentagon to the center, also known as the apothem. (positive number)
 #'
-#' @return The area of a pentagon with a perimeter x and apothem y.
+#' @return The area of a regular pentagon with a perimeter x and apothem y.
 #' @export
 #'
 #' @examples
@@ -108,13 +108,13 @@ area_pentagon <- function(x, y){
   }
 }
 
-#' Area of a Hexagon
+#' Area of a Regular Hexagon
 #'
-#' A simple function to find the area of a hexagon
+#' A simple function to find the area of a regular hexagon
 #'
-#' @param x Length of one side of the hexagon. (positive number)
+#' @param x Length of one side of the regular hexagon. (positive number)
 #'
-#' @return The area of a hexagon with side lengths x.
+#' @return The area of a regular hexagon with side lengths x.
 #' @export
 #'
 #' @examples
@@ -130,13 +130,13 @@ area_hexagon <- function(x){
 }
 
 
-#' Area of a Octagon
+#' Area of a Regular Octagon
 #'
-#' A simple function to find the area of a octagon
+#' A simple function to find the area of a regular octagon
 #'
-#' @param x Length of one side of the octagon (positive number)
+#' @param x Length of one side of the regular octagon (positive number)
 #'
-#' @return The area of a octagon with side lengths x.
+#' @return The area of a regular octagon with side lengths x.
 #' @export
 #'
 #' @examples
@@ -150,3 +150,4 @@ area_octagon <- function(x){
     return(t)
   }
 }
+

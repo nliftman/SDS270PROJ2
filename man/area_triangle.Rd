@@ -7,7 +7,7 @@
 area_triangle(x, y)
 }
 \arguments{
-\item{x}{Length of the base of the triangle. (posotive number)}
+\item{x}{Length of the base of the triangle. (positive number)}
 
 \item{y}{Height of the triangle, which creates a 90 degree angle with the base. (positive number)}
 }

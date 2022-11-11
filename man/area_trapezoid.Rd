@@ -2,22 +2,22 @@
 % Please edit documentation in R/area-functions.R
 \name{area_trapezoid}
 \alias{area_trapezoid}
-\title{Area of a Trapezoid}
+\title{Area of a Regular Trapezoid}
 \usage{
 area_trapezoid(x, y, z)
 }
 \arguments{
-\item{x}{Length of the smaller base of the trapezoid. (positive number)}
+\item{x}{Length of the smaller base of the regular trapezoid. (positive number)}
 
-\item{y}{Length of the larger base of the trapezoid. (positive number)}
+\item{y}{Length of the larger base of the regular trapezoid. (positive number)}
 
-\item{z}{Height of the trapezoid, which creates a 90 degree angle between both bases. (positive number)}
+\item{z}{Height of the regular trapezoid, which creates a 90 degree angle between both bases. (positive number)}
 }
 \value{
-The area of a trapezoid with a bases of x and y and height of z.
+The area of a regular trapezoid with a bases of x and y and height of z.
 }
 \description{
-A simple function to find the area of a trapezoid
+A simple function to find the area of a regular trapezoid
 }
 \examples{
 area_trapezoid(2, 3, 4)
