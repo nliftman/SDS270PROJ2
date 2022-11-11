@@ -15,6 +15,9 @@ test_that("find the area of a trapezoid correctly", {
 })
 
 test_that("find the area of a pentagon correctly", {
-  expect_equal(area_triangle(2,2), 2)
+  expect_equal(area_pentagon(2,2), 2)
 })
 
+test_that("find the area of a hexagon correctly", {
+  expect_equal(area_hexagon(3), 23.382686)
+})

@@ -55,7 +55,7 @@ area_circle <- function(x){
 #' area_triangle(2, 4)
 area_triangle <- function(x,y){
   if (!is.numeric(x) | !is.numeric(y) | x < 0 | y < 0 ){
-    stop("The base and height of a triangle must be positive and numeric")
+    stop("The base and height of a triangle must be positive and numeric!")
     }
   else{
     z <- (x*y)/2
@@ -78,7 +78,7 @@ area_triangle <- function(x,y){
 #' area_trapezoid(2, 3, 4)
 area_trapezoid <- function(x,y, z){
   if (!is.numeric(x) | !is.numeric(y) | !is.numeric(z) | x < 0 | y < 0 | z < 0 ){
-    stop("Both bases and height of a trapezoid must be positive and numeric")
+    stop("Both bases and height of a trapezoid must be positive and numeric!")
   }
   else{
     t <- {((x + y)*z)/2}
@@ -100,7 +100,7 @@ area_trapezoid <- function(x,y, z){
 #' area_pentagon(2, 3)
 area_pentagon <- function(x, y){
   if (!is.numeric(x) | !is.numeric(y) |  x < 0 | y < 0 ){
-    stop("Both permiter and apothem of a pentagon must be positive and numeric")
+    stop("Both permiter and apothem of a pentagon must be positive and numeric!")
   }
   else{
     t <- {(x+y)/2}
@@ -108,6 +108,25 @@ area_pentagon <- function(x, y){
   }
 }
 
-
+#' Area of a Hexagon
+#'
+#' A simple function to find the area of a hexagon
+#'
+#' @param x Length of one side of the hexagon. (positive number)
+#'
+#' @return The area of a hexagon with side lengths x.
+#' @export
+#'
+#' @examples
+#' area_hexagon(3)
+area_hexagon <- function(x){
+  if (!is.numeric(x) | x < 0 ){
+    stop("Side lengths of hexagons must be positive and numeric!")
+  }
+  else{
+    t <- {(3*sqrt(3))/2}*x^2
+    return(t)
+  }
+}
 
 
