@@ -45,9 +45,33 @@ cylinder <- function(radius, height){
 }
 
 
+#' Calculates the volume of a prism with the provide dimensions
+#'
+#' @param base base dimension
+#' @param height height dimension
+#' @return volume of prism
+prism <- function(base, height){
+  if (is.numeric(base) && is.numeric(height)){
+    base*height
+  }
+  else{
+    stop("Function arguments should be numeric")
+  }
+}
 
 
+#' Calculates the volume of a sphere with the provide dimensions
+#'
+#' @param radius radius dimension
+#' @return volume of sphere
+sphere <- function(radius){
+  if (is.numeric(radius)){
+     pi*(4⁄3)*radius^3
+  }
+  else{
+    stop("Function arguments should be numeric")
+  }
+}
 
-
-
+sphere(2)
 
