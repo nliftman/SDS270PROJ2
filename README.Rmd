@@ -34,8 +34,8 @@ The target audience of this package is young students who
 
 You can install the development version of SDS270PROJ2 like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```{r}
+remotes::install_github("nliftman/shapez")
 ```
 
 ## Example
