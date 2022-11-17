@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/SDS270PROJ2)](https://CRAN.R-project.org/package=SDS270PROJ2)
 <!-- badges: end -->
 
-The goal of SDS270PROJ2 is to ...
+The goal of Shapez is to ...
 
 ## Purpose
 
@@ -32,10 +32,10 @@ The target audience of this package is young students who
 
 ## Installation
 
-You can install the development version of SDS270PROJ2 like so:
+You can install the development version of Shapez like so:
 
 ```{r}
-remotes::install_github("nliftman/shapez")
+remotes::install_github("nliftman/shapez", force = TRUE)
 ```
 
 ## Example
@@ -43,7 +43,7 @@ remotes::install_github("nliftman/shapez")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(SDS270PROJ2)
+library(shapez)
 ## basic example code
 ```
 
