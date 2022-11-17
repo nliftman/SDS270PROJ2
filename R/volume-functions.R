@@ -66,12 +66,11 @@ prism <- function(base, height){
 #' @return volume of sphere
 sphere <- function(radius){
   if (is.numeric(radius)){
-     pi*(4⁄3)*radius^3
+    ((4*(pi)*(radius^3)/3))
   }
   else{
     stop("Function arguments should be numeric")
   }
 }
 
-sphere(2)
 
