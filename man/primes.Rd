@@ -3,14 +3,14 @@
 \docType{data}
 \name{primes}
 \alias{primes}
-\title{Prime Numbers}
+\title{Primes Dataset}
 \format{
 \subsection{\code{primes}}{
 
 A data frame with 1,000 rows and 2 columns:
 \describe{
-\item{n}{The chronological prime number order}
 \item{prime_n}{Prime number}
+\item{type}{If the prime number is even or odd}
 }
 }
 }
@@ -21,6 +21,6 @@ A data frame with 1,000 rows and 2 columns:
 primes
 }
 \description{
-The first 1000 prime numbers.
+A dataset with the first 1000 prime numbers.
 }
 \keyword{datasets}
