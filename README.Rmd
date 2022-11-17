@@ -28,14 +28,14 @@ This package calculates the area and volume of simple, and somewhat complex shap
 
 ## Target Audience
 
-The target audience of this package is young students who 
+There are two target audiences of our package. One is the user who wants R to run just like a calculator, so these functions are used to calculate these shapes. The other target audience is a young child first getting familiar with R, and writing code in R. They can use these functions to understand R and writing R code from the perspective of calculations they already understand!
 
 ## Installation
 
 You can install the development version of Shapez like so:
 
 ```{r}
-remotes::install_github("nliftman/shapez", force = TRUE)
+remotes::install_github("nliftman/shapez")
 ```
 
 ## Example
@@ -43,7 +43,7 @@ remotes::install_github("nliftman/shapez", force = TRUE)
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(shapez)
+library(Shapez)
 ## basic example code
 ```
 
