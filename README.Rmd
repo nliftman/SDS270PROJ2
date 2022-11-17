@@ -24,11 +24,11 @@ The goal of SDS270PROJ2 is to ...
 
 ## Purpose
 
-The purpose of this package is to...
+This package calculates the area and volume of simple, and somewhat complex shapes. 
 
-## Target Dudience
+## Target Audience
 
-The target audience for this package is...
+The target audience of this package is young students who 
 
 ## Installation
 
