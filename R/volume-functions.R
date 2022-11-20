@@ -1,7 +1,6 @@
-#' Calculates the volume of a cube with the provide dimension
-
+#' Calculates the volume of a cube with the provided dimension
 #'
-#' @param length length dimension
+#' @param length length of edge or side
 #' @return volume of cube
 cube <- function(length){
   if (is.numeric(length)){
@@ -13,7 +12,7 @@ cube <- function(length){
 }
 
 
-#' Calculates the volume of a rectangular solid with the provide dimensions
+#' Calculates the volume of a rectangular solid with the provided dimensions
 #'
 #' @param length length dimension
 #' @param width width dimension
@@ -29,15 +28,14 @@ rectangular_solid <- function(length, width, height){
 }
 
 
-
-#' Calculates the volume of a cylinder with the provide dimensions
+#' Calculates the volume of a cylinder with the provided dimensions
 #'
-#' @param radius radius dimension
+#' @param base_radius radius of the circular base
 #' @param height height dimension
 #' @return volume of cylinder
-cylinder <- function(radius, height){
-  if (is.numeric(radius) && is.numeric(height)){
-    pi*height*radius^2
+cylinder <- function(base_radius, height){
+  if (is.numeric(base_radius) && is.numeric(height)){
+    pi*height*base_radius^2
   }
   else{
     stop("Function arguments should be numeric")
@@ -45,14 +43,14 @@ cylinder <- function(radius, height){
 }
 
 
-#' Calculates the volume of a prism with the provide dimensions
+#' Calculates the volume of a prism with the provided dimensions
 #'
-#' @param base base dimension
+#' @param base_area area of base
 #' @param height height dimension
 #' @return volume of prism
-prism <- function(base, height){
-  if (is.numeric(base) && is.numeric(height)){
-    base*height
+prism <- function(base_area, height){
+  if (is.numeric(base_area) && is.numeric(height)){
+    base_area*height
   }
   else{
     stop("Function arguments should be numeric")
@@ -60,7 +58,7 @@ prism <- function(base, height){
 }
 
 
-#' Calculates the volume of a sphere with the provide dimensions
+#' Calculates the volume of a sphere with the provided dimension
 #'
 #' @param radius radius dimension
 #' @return volume of sphere
@@ -73,4 +71,77 @@ sphere <- function(radius){
   }
 }
 
+
+#' Calculates the volume of a semi-sphere with the provided dimension
+#'
+#' @param base_radius base radius dimension
+#' @return volume of hemisphere
+hemisphere <- function(base_radius){
+  if (is.numeric(base_radius)){
+    ((2/3)*pi*base_radius^3)
+  }
+  else{
+    stop("Function arguments should be numeric")
+  }
+}
+
+
+#' Calculates the volume of a pyramid with the provided dimensions
+#'
+#' @param base_area area of base
+#' @param height height dimension
+#' @return volume of square pyramid
+square_pyramid <- function(base_area, height){
+  if (is.numeric(base_area)  && is.numeric(height)){
+    (1/3)*base_area
+  }
+  else{
+    stop("Function arguments should be numeric")
+  }
+}
+
+
+#' Calculates the volume of a right circular cone with the provided dimensions
+#'
+#' @param base_radius radius of the circular base
+#' @param height height dimension
+#' @return volume of right circular cone
+right_circular_cone <- function(base_radius, height){
+  if (is.numeric(base_radius) && is.numeric(height)){
+    (1/3)*pi*base_radius^2*height
+  }
+  else{
+    stop("Function arguments should be numeric")
+  }
+}
+
+
+#' Calculates the volume of an ellipsoid with the provided dimensions
+#'
+#' @param radius 1st semi-axe dimension
+#' @param height 2nd semi-axe dimension
+#' @param height 3rd semi-axe dimension
+#' @return volume of ellipsoid
+ellipsoid <- function(semi_axe_1,semi_axe_2, semi_axe_3){
+  if (is.numeric(semi_axe_1) && is.numeric(semi_axe_2) && is.numeric(semi_axe_3)){
+    (4/3)*pi*semi_axe_1*semi_axe_2*semi_axe_3
+  }
+  else{
+    stop("Function arguments should be numeric")
+  }
+}
+
+
+#' Calculates the volume of a tetrahedron with the provided dimensions
+#'
+#' @param length length of the edge
+#' @return volume of tetrahedron
+tetrahedron <- function(length){
+  if (is.numeric(length)){
+    (length^3)/(6*sqrt(2))
+  }
+  else{
+    stop("Function arguments should be numeric")
+  }
+}
 
