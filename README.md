@@ -23,20 +23,8 @@ calculations they already understand!
 You can install the development version of shapez like so:
 
 ``` r
-remotes::install_github("nliftman/shapez")
+#remotes::install_github("nliftman/shapez")
 ```
-
-    ## Downloading GitHub repo nliftman/shapez@HEAD
-
-    ## * checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/Rtmp6MdAEz/remotes3a1f54fce985/nliftman-shapez-5ab5dce/DESCRIPTION’ ... OK
-    ## * preparing ‘shapez’:
-    ## * checking DESCRIPTION meta-information ... OK
-    ## * checking for LF line-endings in source and make files and shell scripts
-    ## * checking for empty or unneeded directories
-    ## * building ‘shapez_0.0.0.9000.tar.gz’
-
-    ## Installing package into '/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpguFSmj/temp_libpath35d058502140'
-    ## (as 'lib' is unspecified)
 
 ## Example
 
