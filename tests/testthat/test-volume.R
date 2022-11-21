@@ -9,7 +9,7 @@ test_that("find the volume of a rectangular solid correctly", {
 
 
 test_that("find the volume of a cylinder correctly", {
-  expect_equal(cylinder_volume(3.45, 4), 149.57123)
+  expect_equal(cylinder_volume(3.45, 4), 149.571226)
 })
 
 
@@ -28,7 +28,7 @@ test_that("find the volume of a hemisphere correctly", {
 })
 
 test_that("find the volume of a square pyramid correctly", {
-  expect_equal(square_pyramid_volume(2, 2), 2.66667)
+  expect_equal(square_pyramid_volume(2, 2), 2.6666667)
 })
 
 
