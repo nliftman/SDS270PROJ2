@@ -6,10 +6,10 @@
 #' @return volume of cube
 cube_volume <- function(length){
   if ((!is.numeric(length)) | length < 0){
-    length^3
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    length^3
   }
 }
 
@@ -22,10 +22,10 @@ cube_volume <- function(length){
 #' @return volume of rectangular solid
 rectangular_solid_volume <- function(length, width, height){
   if ((!is.numeric(length)) | (!is.numeric(width)) | (!is.numeric(height)) | length<0 | width<0 | height<0){
-    length*width*height
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    length*width*height
   }
 }
 
@@ -37,10 +37,10 @@ rectangular_solid_volume <- function(length, width, height){
 #' @return volume of cylinder
 cylinder_volume <- function(base_radius, height){
   if ((!is.numeric(base_radius)) | (!is.numeric(height)) | base_radius<0 | height<0){
-    pi*height*base_radius^2
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    pi*height*base_radius^2
   }
 }
 
@@ -52,10 +52,10 @@ cylinder_volume <- function(base_radius, height){
 #' @return volume of prism
 prism_volume <- function(base_area, height){
   if ((!is.numeric(base_area)) | (!is.numeric(height)) | base_area<0 | height<0){
-    base_area*height
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    base_area*height
   }
 }
 
@@ -66,10 +66,10 @@ prism_volume <- function(base_area, height){
 #' @return volume of sphere
 sphere_volume <- function(radius){
   if ((!is.numeric(radius)) | radius<0 ){
-    ((4*(pi)*(radius^3)/3))
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    ((4*(pi)*(radius^3)/3))
   }
 }
 
@@ -80,10 +80,10 @@ sphere_volume <- function(radius){
 #' @return volume of hemisphere
 hemisphere_volume <- function(base_radius){
   if ((!is.numeric(base_radius)) | base_radius<0){
-    ((2/3)*pi*base_radius^3)
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    ((2/3)*pi*base_radius^3)
   }
 }
 
@@ -95,10 +95,10 @@ hemisphere_volume <- function(base_radius){
 #' @return volume of square pyramid
 square_pyramid_volume <- function(base_area, height){
   if ((!is.numeric(base_area)) |  (!is.numeric(height)) | base_area<0 | height<0 ){
-    base_area^2 *(height/3)
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    base_area^2 *(height/3)
   }
 }
 
@@ -110,10 +110,10 @@ square_pyramid_volume <- function(base_area, height){
 #' @return volume of right circular cone
 right_circular_cone_volume <- function(base_radius, height){
   if ((!is.numeric(base_radius)) | (!is.numeric(height)) | base_radius<0 | height<0 ){
-    (1/3)*pi*base_radius^2*height
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    (1/3)*pi*base_radius^2*height
   }
 }
 
@@ -126,10 +126,10 @@ right_circular_cone_volume <- function(base_radius, height){
 #' @return volume of ellipsoid
 ellipsoid_volume <- function(semi_axe_1,semi_axe_2, semi_axe_3){
   if ((!is.numeric(semi_axe_1)) | (!is.numeric(semi_axe_2)) | (!is.numeric(semi_axe_3)) | semi_axe_1<0 | semi_axe_2<0 | semi_axe_3<0 ){
-    (4/3)*pi*semi_axe_1*semi_axe_2*semi_axe_3
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    (4/3)*pi*semi_axe_1*semi_axe_2*semi_axe_3
   }
 }
 
@@ -140,10 +140,10 @@ ellipsoid_volume <- function(semi_axe_1,semi_axe_2, semi_axe_3){
 #' @return volume of tetrahedron
 tetrahedron_volume <- function(length){
   if ((!is.numeric(length)) | length<0 ){
-    (length^3)/(6*sqrt(2))
+    stop("Function arguments should be numeric")
   }
   else{
-    stop("Function arguments should be numeric")
+    (length^3)/(6*sqrt(2))
   }
 }
 
