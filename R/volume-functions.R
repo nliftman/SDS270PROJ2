@@ -5,7 +5,7 @@
 #' @param length length of edge or side
 #' @return volume of cube
 cube_volume <- function(length){
-  if (is.numeric(length)){
+  if ((!is.numeric(length)) | length < 0){
     length^3
   }
   else{
@@ -21,7 +21,7 @@ cube_volume <- function(length){
 #' @param height height dimension
 #' @return volume of rectangular solid
 rectangular_solid_volume <- function(length, width, height){
-  if (is.numeric(length) && is.numeric(width) && is.numeric(height)){
+  if ((!is.numeric(length)) | (!is.numeric(width)) | (!is.numeric(height)) | length<0 | width<0 | height<0){
     length*width*height
   }
   else{
@@ -36,7 +36,7 @@ rectangular_solid_volume <- function(length, width, height){
 #' @param height height dimension
 #' @return volume of cylinder
 cylinder_volume <- function(base_radius, height){
-  if (is.numeric(base_radius) && is.numeric(height)){
+  if ((!is.numeric(base_radius)) | (!is.numeric(height)) | base_radius<0 | height<0){
     pi*height*base_radius^2
   }
   else{
@@ -51,7 +51,7 @@ cylinder_volume <- function(base_radius, height){
 #' @param height height dimension
 #' @return volume of prism
 prism_volume <- function(base_area, height){
-  if (is.numeric(base_area) && is.numeric(height)){
+  if ((!is.numeric(base_area)) | (!is.numeric(height)) | base_area<0 | height<0){
     base_area*height
   }
   else{
@@ -65,7 +65,7 @@ prism_volume <- function(base_area, height){
 #' @param radius radius dimension
 #' @return volume of sphere
 sphere_volume <- function(radius){
-  if (is.numeric(radius)){
+  if ((!is.numeric(radius)) | radius<0 ){
     ((4*(pi)*(radius^3)/3))
   }
   else{
@@ -79,7 +79,7 @@ sphere_volume <- function(radius){
 #' @param base_radius base radius dimension
 #' @return volume of hemisphere
 hemisphere_volume <- function(base_radius){
-  if (is.numeric(base_radius)){
+  if ((!is.numeric(base_radius)) | base_radius<0){
     ((2/3)*pi*base_radius^3)
   }
   else{
@@ -94,7 +94,7 @@ hemisphere_volume <- function(base_radius){
 #' @param height height dimension
 #' @return volume of square pyramid
 square_pyramid_volume <- function(base_area, height){
-  if (is.numeric(base_area)  && is.numeric(height)){
+  if ((!is.numeric(base_area)) |  (!is.numeric(height)) | base_area<0 | height<0 ){
     base_area^2 *(height/3)
   }
   else{
@@ -109,7 +109,7 @@ square_pyramid_volume <- function(base_area, height){
 #' @param height height dimension
 #' @return volume of right circular cone
 right_circular_cone_volume <- function(base_radius, height){
-  if (is.numeric(base_radius) && is.numeric(height)){
+  if ((!is.numeric(base_radius)) | (!is.numeric(height)) | base_radius<0 | height<0 ){
     (1/3)*pi*base_radius^2*height
   }
   else{
@@ -125,7 +125,7 @@ right_circular_cone_volume <- function(base_radius, height){
 #' @param height 3rd semi-axe dimension
 #' @return volume of ellipsoid
 ellipsoid_volume <- function(semi_axe_1,semi_axe_2, semi_axe_3){
-  if (is.numeric(semi_axe_1) && is.numeric(semi_axe_2) && is.numeric(semi_axe_3)){
+  if ((!is.numeric(semi_axe_1)) | (!is.numeric(semi_axe_2)) | (!is.numeric(semi_axe_3)) | semi_axe_1<0 | semi_axe_2<0 | semi_axe_3<0 ){
     (4/3)*pi*semi_axe_1*semi_axe_2*semi_axe_3
   }
   else{
@@ -139,7 +139,7 @@ ellipsoid_volume <- function(semi_axe_1,semi_axe_2, semi_axe_3){
 #' @param length length of the edge
 #' @return volume of tetrahedron
 tetrahedron_volume <- function(length){
-  if (is.numeric(length)){
+  if ((!is.numeric(length)) | length<0 ){
     (length^3)/(6*sqrt(2))
   }
   else{
