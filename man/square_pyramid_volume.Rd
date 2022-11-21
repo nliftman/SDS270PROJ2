@@ -2,7 +2,7 @@
 % Please edit documentation in R/volume-functions.R
 \name{square_pyramid_volume}
 \alias{square_pyramid_volume}
-\title{Calculates the volume of a pyramid with the provided dimensions}
+\title{Calculates the volume of a square pyramid with the provided dimensions}
 \usage{
 square_pyramid_volume(base_area, height)
 }
@@ -15,5 +15,5 @@ square_pyramid_volume(base_area, height)
 volume of square pyramid
 }
 \description{
-Calculates the volume of a pyramid with the provided dimensions
+Calculates the volume of a square pyramid with the provided dimensions
 }
