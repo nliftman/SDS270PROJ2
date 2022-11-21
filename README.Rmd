@@ -22,8 +22,8 @@ There are two target audiences of our package. One is the user who wants R to ru
 
 You can install the development version of shapez like so:
 
-```{r warning = FALSE, error = FALSE}
-remotes::install_github("nliftman/shapez")
+```{r}
+#remotes::install_github("nliftman/shapez")
 ```
 
 ## Example
