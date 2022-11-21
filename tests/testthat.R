@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(SDS270PROJ2)
+library(shapez)
 
-test_check("SDS270PROJ2")
+test_check("shapez")
