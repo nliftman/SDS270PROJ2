@@ -102,7 +102,7 @@ square_pyramid_volume <- function(base_area, height){
   }
 }
 
-
+square_pyramid_volume(2,2)
 #' Calculates the volume of a right circular cone with the provided dimensions
 #'
 #' @param base_radius radius of the circular base
@@ -147,3 +147,4 @@ tetrahedron_volume <- function(length){
   }
 }
 
+hemisphere_volume(5.5)
