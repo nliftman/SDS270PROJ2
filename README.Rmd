@@ -23,10 +23,11 @@ There are two target audiences of our package. One is the user who wants R to ru
 You can install the development version of shapez like so:
 
 ```{r}
-#remotes::install_github("nliftman/shapez")
+remotes::install_github("nliftman/shapez")
 ```
 
-## Examples Area
+## Examples 
+### Area
 
 Calculations of area of a circle: 
 
@@ -45,8 +46,11 @@ Calculations of area of octagon:
 area_octagon(6)
 ```
 
+### Volume
+
 Calculations of volume of sphere:
 ```{r}
+library(shapez)
 sphere_volume(7)
 ```
 
@@ -59,6 +63,12 @@ Calculations of volume of tetrahedron:
 ```{r}
 tetrahedron_volume(1982)
 ```
+
+### Dataset
+```{r}
+data(primes)
+```
+
 
 ## Package Proposal
 
