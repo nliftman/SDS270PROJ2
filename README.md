@@ -63,4 +63,5 @@ an individual shape such as base area, diagonal lengths, circumferences,
 etc. The user would then have an option to display all the relevant
 properties values for their shape when they call the volume function on
 it. We also hope to build our functions better, possibly instead of
-using for loops using the map function.
+using for loops using the map function. Finally, we hope to add a
+function to draw the shape being calculated.
