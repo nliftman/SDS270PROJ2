@@ -4,6 +4,7 @@
 #'
 #' @param length length of edge or side
 #' @return volume of cube
+#' @export
 cube_volume <- function(length){
   if ((!is.numeric(length)) | length < 0){
     stop("Function arguments should be numeric")
@@ -20,7 +21,11 @@ cube_volume <- function(length){
 #' @param width width dimension
 #' @param height height dimension
 #' @return volume of rectangular solid
+<<<<<<< HEAD
 #' @ex
+=======
+#' @export
+>>>>>>> 364b792b9efb225281ac0251b3ffbd6a5dc1b9e8
 rectangular_solid_volume <- function(length, width, height){
   if ((!is.numeric(length)) | (!is.numeric(width)) | (!is.numeric(height)) | length<0 | width<0 | height<0){
     stop("Function arguments should be numeric")
@@ -36,6 +41,7 @@ rectangular_solid_volume <- function(length, width, height){
 #' @param base_radius radius of the circular base
 #' @param height height dimension
 #' @return volume of cylinder
+#' @export
 cylinder_volume <- function(base_radius, height){
   if ((!is.numeric(base_radius)) | (!is.numeric(height)) | base_radius<0 | height<0){
     stop("Function arguments should be numeric")
@@ -51,6 +57,7 @@ cylinder_volume <- function(base_radius, height){
 #' @param base_area area of base
 #' @param height height dimension
 #' @return volume of prism
+#' @export
 prism_volume <- function(base_area, height){
   if ((!is.numeric(base_area)) | (!is.numeric(height)) | base_area<0 | height<0){
     stop("Function arguments should be numeric")
@@ -65,6 +72,7 @@ prism_volume <- function(base_area, height){
 #'
 #' @param radius radius dimension
 #' @return volume of sphere
+#' @export
 sphere_volume <- function(radius){
   if ((!is.numeric(radius)) | radius<0 ){
     stop("Function arguments should be numeric")
@@ -79,6 +87,7 @@ sphere_volume <- function(radius){
 #'
 #' @param base_radius base radius dimension
 #' @return volume of hemisphere
+#' @export
 hemisphere_volume <- function(base_radius){
   if ((!is.numeric(base_radius)) | base_radius<0){
     stop("Function arguments should be numeric")
@@ -94,6 +103,7 @@ hemisphere_volume <- function(base_radius){
 #' @param base_area area of base
 #' @param height height dimension
 #' @return volume of square pyramid
+#' @export
 square_pyramid_volume <- function(base_area, height){
   if ((!is.numeric(base_area)) |  (!is.numeric(height)) | base_area<0 | height<0 ){
     stop("Function arguments should be numeric")
@@ -109,6 +119,7 @@ square_pyramid_volume(2,2)
 #' @param base_radius radius of the circular base
 #' @param height height dimension
 #' @return volume of right circular cone
+#' @export
 right_circular_cone_volume <- function(base_radius, height){
   if ((!is.numeric(base_radius)) | (!is.numeric(height)) | base_radius<0 | height<0 ){
     stop("Function arguments should be numeric")
@@ -125,6 +136,7 @@ right_circular_cone_volume <- function(base_radius, height){
 #' @param semi_axe_2 2nd semi-axe dimension
 #' @param semi_axe_3 3rd semi-axe dimension
 #' @return volume of ellipsoid
+#' @export
 ellipsoid_volume <- function(semi_axe_1,semi_axe_2, semi_axe_3){
   if ((!is.numeric(semi_axe_1)) | (!is.numeric(semi_axe_2)) | (!is.numeric(semi_axe_3)) | semi_axe_1<0 | semi_axe_2<0 | semi_axe_3<0 ){
     stop("Function arguments should be numeric")
@@ -139,6 +151,7 @@ ellipsoid_volume <- function(semi_axe_1,semi_axe_2, semi_axe_3){
 #'
 #' @param length length of the edge
 #' @return volume of tetrahedron
+#' @export
 tetrahedron_volume <- function(length){
   if ((!is.numeric(length)) | length<0 ){
     stop("Function arguments should be numeric")
