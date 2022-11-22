@@ -45,6 +45,20 @@ Calculations of area of octagon:
 area_octagon(6)
 ```
 
+Calculations of volume of sphere:
+```{r}
+sphere_volume(7)
+```
+
+Calculations of volume of square pyramid:
+```{r}
+square_pyramid_volume(2, 2)
+```
+
+Calculations of volume of tetrahedron:
+```{r}
+tetrahedron_volume(1982)
+```
 
 ## Package Proposal
 
