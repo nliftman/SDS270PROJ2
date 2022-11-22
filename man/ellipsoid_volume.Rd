@@ -7,9 +7,11 @@
 ellipsoid_volume(semi_axe_1, semi_axe_2, semi_axe_3)
 }
 \arguments{
-\item{radius}{1st semi-axe dimension}
+\item{semi_axe_1}{1st semi-axe dimension}
 
-\item{height}{3rd semi-axe dimension}
+\item{semi_axe_2}{2nd semi-axe dimension}
+
+\item{semi_axe_3}{3rd semi-axe dimension}
 }
 \value{
 volume of ellipsoid
