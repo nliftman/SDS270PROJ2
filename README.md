@@ -23,10 +23,26 @@ calculations they already understand!
 You can install the development version of shapez like so:
 
 ``` r
-#remotes::install_github("nliftman/shapez")
+remotes::install_github("nliftman/shapez")
 ```
 
-## Examples Area
+    ## Downloading GitHub repo nliftman/shapez@HEAD
+
+    ##      checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpfARSHZ/remotes4ec66120b45f/nliftman-shapez-a759cf8/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpfARSHZ/remotes4ec66120b45f/nliftman-shapez-a759cf8/DESCRIPTION’
+    ##   ─  preparing ‘shapez’:
+    ##      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+    ##   ─  checking for LF line-endings in source and make files and shell scripts
+    ##   ─  checking for empty or unneeded directories
+    ##   ─  building ‘shapez_0.0.0.9000.tar.gz’
+    ##      
+    ## 
+
+    ## Installing package into '/Users/naomiliftman/Library/R/x86_64/4.2/library'
+    ## (as 'lib' is unspecified)
+
+## Examples
+
+### Area
 
 Calculations of area of a circle:
 
@@ -52,6 +68,39 @@ area_octagon(6)
 ```
 
     ## [1] 173.8234
+
+### Volume
+
+Calculations of volume of sphere:
+
+``` r
+library(shapez)
+sphere_volume(7)
+```
+
+    ## [1] 1436.755
+
+Calculations of volume of square pyramid:
+
+``` r
+square_pyramid_volume(2, 2)
+```
+
+    ## [1] 2.666667
+
+Calculations of volume of tetrahedron:
+
+``` r
+tetrahedron_volume(1982)
+```
+
+    ## [1] 917581613
+
+### Dataset
+
+``` r
+data(primes)
+```
 
 ## Package Proposal
 
