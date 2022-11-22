@@ -26,19 +26,8 @@ You can install the development version of shapez like so:
 remotes::install_github("nliftman/shapez")
 ```
 
-    ## Downloading GitHub repo nliftman/shapez@HEAD
-
-    ##      checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpfARSHZ/remotes4ec66120b45f/nliftman-shapez-a759cf8/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpfARSHZ/remotes4ec66120b45f/nliftman-shapez-a759cf8/DESCRIPTION’
-    ##   ─  preparing ‘shapez’:
-    ##      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-    ##   ─  checking for LF line-endings in source and make files and shell scripts
-    ##   ─  checking for empty or unneeded directories
-    ##   ─  building ‘shapez_0.0.0.9000.tar.gz’
-    ##      
-    ## 
-
-    ## Installing package into '/Users/naomiliftman/Library/R/x86_64/4.2/library'
-    ## (as 'lib' is unspecified)
+    ## Skipping install of 'shapez' from a github remote, the SHA1 (2484049d) has not changed since last install.
+    ##   Use `force = TRUE` to force installation
 
 ## Examples
 
