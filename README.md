@@ -26,9 +26,9 @@ You can install the development version of shapez like so:
 #remotes::install_github("nliftman/shapez")
 ```
 
-## Example
+## Examples Area
 
-This is a basic example which shows you how to solve a common problem:
+Calculations of area of a circle:
 
 ``` r
 library(shapez)
@@ -36,6 +36,22 @@ area_circle(4)
 ```
 
     ## [1] 50.26548
+
+Calculations of area of a pentagon:
+
+``` r
+area_pentagon(3, 4)
+```
+
+    ## [1] 3.5
+
+Calculations of area of octagon:
+
+``` r
+area_octagon(6)
+```
+
+    ## [1] 173.8234
 
 ## Package Proposal
 
