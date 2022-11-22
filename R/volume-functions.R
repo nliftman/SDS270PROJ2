@@ -21,11 +21,7 @@ cube_volume <- function(length){
 #' @param width width dimension
 #' @param height height dimension
 #' @return volume of rectangular solid
-<<<<<<< HEAD
-#' @ex
-=======
 #' @export
->>>>>>> 364b792b9efb225281ac0251b3ffbd6a5dc1b9e8
 rectangular_solid_volume <- function(length, width, height){
   if ((!is.numeric(length)) | (!is.numeric(width)) | (!is.numeric(height)) | length<0 | width<0 | height<0){
     stop("Function arguments should be numeric")
