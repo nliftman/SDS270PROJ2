@@ -26,12 +26,19 @@ You can install the development version of shapez like so:
 remotes::install_github("nliftman/shapez")
 ```
 
-<<<<<<< HEAD
-    ## Skipping install of 'shapez' from a github remote, the SHA1 (e7a33579) has not changed since last install.
-=======
-    ## Skipping install of 'shapez' from a github remote, the SHA1 (2484049d) has not changed since last install.
->>>>>>> e7a33579f03a7165dc0f64d777b7b36069e38945
-    ##   Use `force = TRUE` to force installation
+    ## Downloading GitHub repo nliftman/shapez@HEAD
+
+    ##      checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpsUgdJH/remotes56d96a553353/nliftman-shapez-bca685f/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpsUgdJH/remotes56d96a553353/nliftman-shapez-bca685f/DESCRIPTION’
+    ##   ─  preparing ‘shapez’:
+    ##      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+    ##   ─  checking for LF line-endings in source and make files and shell scripts
+    ##   ─  checking for empty or unneeded directories
+    ##   ─  building ‘shapez_0.0.0.9000.tar.gz’
+    ##      
+    ## 
+
+    ## Installing package into '/Users/naomiliftman/Library/R/x86_64/4.2/library'
+    ## (as 'lib' is unspecified)
 
 ## Examples
 
@@ -97,17 +104,17 @@ Look at the first 10 prime numbers, and if they are even or odd!
 head(primes, 10)
 ```
 
-    ##    prime_n type
-    ## 1        2 even
-    ## 2        3  odd
-    ## 3        5  odd
-    ## 4        7  odd
-    ## 5       11  odd
-    ## 6       13  odd
-    ## 7       17  odd
-    ## 8       19  odd
-    ## 9       23  odd
-    ## 10      29  odd
+    ##    ind prime_n type
+    ## 1    1       2 even
+    ## 2    2       3  odd
+    ## 3    3       5  odd
+    ## 4    4       7  odd
+    ## 5    5      11  odd
+    ## 6    6      13  odd
+    ## 7    7      17  odd
+    ## 8    8      19  odd
+    ## 9    9      23  odd
+    ## 10  10      29  odd
 
 ## Package Proposal
 
