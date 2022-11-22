@@ -27,7 +27,6 @@ test_that("find the volume of a hemisphere correctly", {
   expect_equal(hemisphere_volume(5.5), 348.45499)
 })
 
-
 test_that("find the volume of a square pyramid correctly", {
   expect_equal(square_pyramid_volume(2, 2), 2.6666667)
 })
