@@ -26,19 +26,8 @@ You can install the development version of shapez like so:
 remotes::install_github("nliftman/shapez")
 ```
 
-    ## Downloading GitHub repo nliftman/shapez@HEAD
-
-    ##      checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpfARSHZ/remotes4ec66120b45f/nliftman-shapez-a759cf8/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpfARSHZ/remotes4ec66120b45f/nliftman-shapez-a759cf8/DESCRIPTION’
-    ##   ─  preparing ‘shapez’:
-    ##      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-    ##   ─  checking for LF line-endings in source and make files and shell scripts
-    ##   ─  checking for empty or unneeded directories
-    ##   ─  building ‘shapez_0.0.0.9000.tar.gz’
-    ##      
-    ## 
-
-    ## Installing package into '/Users/naomiliftman/Library/R/x86_64/4.2/library'
-    ## (as 'lib' is unspecified)
+    ## Skipping install of 'shapez' from a github remote, the SHA1 (e7a33579) has not changed since last install.
+    ##   Use `force = TRUE` to force installation
 
 ## Examples
 
@@ -98,9 +87,23 @@ tetrahedron_volume(1982)
 
 ### Dataset
 
+Look at the first 10 prime numbers, and if they are even or odd!
+
 ``` r
-data(primes)
+head(primes, 10)
 ```
+
+    ##    prime_n type
+    ## 1        2 even
+    ## 2        3  odd
+    ## 3        5  odd
+    ## 4        7  odd
+    ## 5       11  odd
+    ## 6       13  odd
+    ## 7       17  odd
+    ## 8       19  odd
+    ## 9       23  odd
+    ## 10      29  odd
 
 ## Package Proposal
 

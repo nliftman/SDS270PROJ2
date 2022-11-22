@@ -65,8 +65,11 @@ tetrahedron_volume(1982)
 ```
 
 ### Dataset
+
+Look at the first 10 prime numbers, and if they are even or odd!
+
 ```{r}
-data(primes)
+head(primes, 10)
 ```
 
 
