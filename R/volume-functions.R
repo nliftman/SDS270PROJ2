@@ -120,9 +120,9 @@ right_circular_cone_volume <- function(base_radius, height){
 
 #' Calculates the volume of an ellipsoid with the provided dimensions
 #'
-#' @param radius 1st semi-axe dimension
-#' @param height 2nd semi-axe dimension
-#' @param height 3rd semi-axe dimension
+#' @param semi_axe_1 1st semi-axe dimension
+#' @param semi_axe_2 2nd semi-axe dimension
+#' @param semi_axe_3 3rd semi-axe dimension
 #' @return volume of ellipsoid
 ellipsoid_volume <- function(semi_axe_1,semi_axe_2, semi_axe_3){
   if (is.numeric(semi_axe_1) && is.numeric(semi_axe_2) && is.numeric(semi_axe_3)){
