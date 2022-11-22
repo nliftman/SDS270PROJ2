@@ -26,7 +26,11 @@ You can install the development version of shapez like so:
 remotes::install_github("nliftman/shapez")
 ```
 
+<<<<<<< HEAD
     ## Skipping install of 'shapez' from a github remote, the SHA1 (e7a33579) has not changed since last install.
+=======
+    ## Skipping install of 'shapez' from a github remote, the SHA1 (2484049d) has not changed since last install.
+>>>>>>> e7a33579f03a7165dc0f64d777b7b36069e38945
     ##   Use `force = TRUE` to force installation
 
 ## Examples
