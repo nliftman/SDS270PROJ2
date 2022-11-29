@@ -17,8 +17,8 @@ graph_square <- function(x, y){
                           y = c(0, y, y, 0))
 
   ggplot(data = square_df) +
-    geom_line(aes(x, y)) +
-    geom_segment(x = 0, y = 0, xend = x, yend = 0) +
-    xlabs("Width of Square") +
-    ylabs("Height of Square")
+    geom_line(aes(x, y), color = "#6d4ee9" ) +
+    geom_segment(x = 0, y = 0, xend = x, yend = 0, color ="#6d4ee9") +
+    xlab("Width of Square") +
+    ylab("Height of Square")
 }
