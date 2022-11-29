@@ -10,15 +10,13 @@
 #'
 #' @examples
 #' graph_circle(2)
-graph_circle <- function(x){
-  #build df
+graph_circle<- function(x,y){
   circle_df <- data.frame(x = c(x, 2*x, x, 0),
                           y = c(0, x, 2*x, x))
-
-  ggplot(data = circle_df) +
-    geom_point(aes(x, y)) +
-    geom_curve(x = x, y = 0, xend = 2*x, yend = x, color = "#6d4ee9" ) +
-    #geom_curve(x = 0, y = 0, xend = x, yend = 0, color ="#6d4ee9") +
-    xlab("Width of Square") +
-    ylab("Height of Square")
+  ggplot(circle_df, aes(x, y)) +
+    annotate("path",
+              x=x+x*cos(seq(0,2*pi,length.out=100)),
+              y=x+x*sin(seq(0,2*pi,length.out=100)),
+             color = "#6d4ee9") +
+    coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on")
 }
