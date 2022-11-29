@@ -1,6 +1,6 @@
 #' Graph Square
 #'
-#' A simple function to find the area of a square.
+#' A simple function to graph a square.
 #'
 #' @param x Width of the square (positive number)
 #' @param y Height of the square (positive number)
