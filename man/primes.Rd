@@ -9,6 +9,7 @@
 
 A data frame with 1,000 rows and 2 columns:
 \describe{
+\item{index}{Index of the prime number}
 \item{prime_n}{Prime number}
 \item{type}{If the prime number is even or odd}
 }

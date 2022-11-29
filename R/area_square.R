@@ -4,8 +4,10 @@
 #'
 #' @param x Width of the square (positive number)
 #' @param y Height of the square (positive number)
+#' @param graph Graphs the shape of the square
 #'
-#' @return The area of a square with width x and height y.
+#' @return The area of a square with width x and height y, and a graph of the square if requested.
+#' @import ggplot2
 #' @export
 #'
 #' @examples
