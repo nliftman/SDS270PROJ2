@@ -4,15 +4,17 @@
 \alias{area_square}
 \title{Area of a Square}
 \usage{
-area_square(x, y, graph)
+area_square(x, y)
 }
 \arguments{
 \item{x}{Width of the square (positive number)}
 
 \item{y}{Height of the square (positive number)}
+
+\item{graph}{Graphs the shape of the square}
 }
 \value{
-The area of a square with width x and height y.
+The area of a square with width x and height y, and a graph of the square if requested.
 }
 \description{
 A simple function to find the area of a square.
