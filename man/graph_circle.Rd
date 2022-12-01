@@ -4,7 +4,7 @@
 \alias{graph_circle}
 \title{Graph Circle}
 \usage{
-graph_circle(x, y)
+graph_circle(x)
 }
 \arguments{
 \item{x}{Radius of the circle (positive number)}

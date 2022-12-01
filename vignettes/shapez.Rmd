@@ -30,7 +30,11 @@ This function `area_square(x, y, graph)` gives the simple area of a rectangle, a
 The function requires `x`, `y`, and `graph` inputs, where `x` is the width of the rectangle, and `y` is the height. The final input `graph`, asks the user whether they would like the rectangle to be graphed. This may help people to visualize what they are measuring. 
 
 ```{r}
-area_square(3, 5)
+area_rectangle(3, 5, 0)
+```
+
+```{r}
+area_rectangle(3, 5, 1)
 ```
 
 

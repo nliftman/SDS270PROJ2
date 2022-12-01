@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' graph_circle(2)
-graph_circle<- function(x,y){
+graph_circle<- function(x){
   circle_df <- data.frame(x = c(x, 2*x, x, 0),
                           y = c(0, x, 2*x, x))
   ggplot(circle_df, aes(x, y)) +
