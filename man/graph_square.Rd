@@ -15,7 +15,7 @@ graph_square(x, y)
 Graph of the area of a square
 }
 \description{
-A simple function to find the area of a square.
+A simple function to graph a square.
 }
 \examples{
 graph_square(2, 4)
