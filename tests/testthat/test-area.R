@@ -2,8 +2,8 @@ test_that("find the area of a rectangle correctly without a graph", {
   expect_equal(area_rectangle(2,4,0), 8)
 })
 
-test_that("find the area of a circle correctly", {
-  expect_equal(area_circle(1.1283791670955126), 4)
+test_that("find the area of a circle correctly without a graph", {
+  expect_equal(area_circle(1.1283791670955126, 0), 4)
 })
 
 test_that("find the area of a triangle correctly", {

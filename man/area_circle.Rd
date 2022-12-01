@@ -4,17 +4,20 @@
 \alias{area_circle}
 \title{Area of a Circle}
 \usage{
-area_circle(x)
+area_circle(x, graph)
 }
 \arguments{
 \item{x}{Radius of the circle (positive number)}
+
+\item{graph}{Indicator variable for graphing option (0 for no graph, 1 for graph)}
 }
 \value{
-The area of the circle with radius x.
+The area of the circle with radius x, and the possibility of the circle being graphed.
 }
 \description{
 A simple function to find the area of a circle
 }
 \examples{
-area_circle(7)
+area_circle(7, 0)
+area_circle(7, 1)
 }

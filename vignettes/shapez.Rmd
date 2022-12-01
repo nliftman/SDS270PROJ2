@@ -27,7 +27,7 @@ library(shapez)
 
 This function `area_square(x, y, graph)` gives the simple area of a rectangle, along with, when requested a graph of the rectangle in question. 
 
-The function requires `x`, `y`, and `graph` inputs, where `x` is the width of the rectangle, and `y` is the height. The final input `graph`, asks the user whether they would like the rectangle to be graphed. This may help people to visualize what they are measuring. 
+The function requires `x`, `y`, and `graph` inputs, where `x` is the width of the rectangle, and `y` is the height. The final input `graph`, asks the user whether they would like the rectangle to be graphed. Inputing a 0 will simply compute the area and not graph the shape, but inputting a 1 will graph the shape. Any other inputs will throw an error. This may help people to visualize what they are measuring. 
 
 ```{r}
 area_rectangle(3, 5, 0)
