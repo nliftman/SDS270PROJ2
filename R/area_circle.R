@@ -17,14 +17,21 @@ area_circle <- function(x, graph){
   } else{
     z <- pi*x^2
     if(graph == 1){
-      print(shapez::graphing_circle(x))
+      circle_df <- data.frame(x = c(x, 2*x, x, 0),
+                              y = c(0, x, 2*x, x))
+      print(ggplot(circle_df, aes(x, y)) +
+        annotate("path",
+                 x=x+x*cos(seq(0,2*pi,length.out=100)),
+                 y=x+x*sin(seq(0,2*pi,length.out=100)),
+                 color = "#6d4ee9") +
+        coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on"))
       return(z)
     }
     else if (graph == 0){
       return(z)
     }
     else{
-      stop('You must input either 0 or 1 to decide graphing options')
+      stop('You must input either 0 or 1 to determine graphing options')
     }
   }
 }
