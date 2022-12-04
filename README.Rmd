@@ -51,17 +51,17 @@ area_octagon(6)
 Calculations of volume of sphere:
 ```{r}
 library(shapez)
-sphere_volume(7)
+volume_sphere(7)
 ```
 
 Calculations of volume of square pyramid:
 ```{r}
-square_pyramid_volume(2, 2)
+volume_square_pyramid(2, 2)
 ```
 
 Calculations of volume of tetrahedron:
 ```{r}
-tetrahedron_volume(1982)
+volume_tetrahedron(1982)
 ```
 
 ### Dataset
