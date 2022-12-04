@@ -6,11 +6,15 @@
 #' @return volume of capsule
 #' @export
 capsule_volume <- function(side_len, radius){
-  if ((!is.numeric(side_len)) | (!is.numeric(radius)) | side_len<0 | radius<0){
+  if ((!is.numeric(side_len)) | (!is.numeric(radius))){
     stop("Function arguments should be numeric")
+  }
+  else if (side_len<0 | radius<0){
+    stop("Function arguments should be greater than or equal to 0")
   }
   else{
     pi*radius^2*(((4/3)*radius) + side_len)
   }
 }
+
 

@@ -6,8 +6,11 @@
 #' @return volume of rectangular solid
 #' @export
 rectangular_solid_volume <- function(length, width, height){
-  if ((!is.numeric(length)) | (!is.numeric(width)) | (!is.numeric(height)) | length<0 | width<0 | height<0){
+  if ((!is.numeric(length)) | (!is.numeric(width)) | (!is.numeric(height))){
     stop("Function arguments should be numeric")
+  }
+  else if (length<0 | width<0 | height<0){
+    stop("Function arguments should be greater than or equal to 0")
   }
   else{
     length*width*height

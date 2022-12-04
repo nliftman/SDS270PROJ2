@@ -7,8 +7,11 @@
 #' @return volume of ellipsoid
 #' @export
 ellipsoid_volume <- function(semi_axe_1,semi_axe_2, semi_axe_3){
-  if ((!is.numeric(semi_axe_1)) | (!is.numeric(semi_axe_2)) | (!is.numeric(semi_axe_3)) | semi_axe_1<0 | semi_axe_2<0 | semi_axe_3<0 ){
+  if ((!is.numeric(semi_axe_1)) | (!is.numeric(semi_axe_2)) | (!is.numeric(semi_axe_3))){
     stop("Function arguments should be numeric")
+  }
+  else if (semi_axe_1<0 | semi_axe_2<0 | semi_axe_3<0){
+    stop("Function arguments should be greater than or equal to 0")
   }
   else{
     (4/3)*pi*semi_axe_1*semi_axe_2*semi_axe_3
