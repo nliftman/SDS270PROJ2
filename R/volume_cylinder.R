@@ -4,7 +4,7 @@
 #' @param height height dimension
 #' @return volume of cylinder
 #' @export
-cylinder_volume <- function(base_radius, height){
+volume_cylinder <- function(base_radius, height){
   if ((!is.numeric(base_radius)) | (!is.numeric(height))){
     stop("Function arguments should be numeric")
   }

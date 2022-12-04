@@ -3,7 +3,7 @@
 #' @param length length of edge or side
 #' @return volume of cube
 #' @export
-cube_volume <- function(length){
+volume_cube <- function(length){
   if (!is.numeric(length)){
     stop("Function arguments should be numeric")
   }

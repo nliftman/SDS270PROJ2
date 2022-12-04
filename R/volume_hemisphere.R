@@ -4,7 +4,7 @@
 #' @param base_radius base radius dimension
 #' @return volume of hemisphere
 #' @export
-hemisphere_volume <- function(base_radius){
+volume_hemisphere <- function(base_radius){
   if ((!is.numeric(base_radius))){
     stop("Function arguments should be numeric")
   }

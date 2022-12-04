@@ -5,7 +5,7 @@
 #' @param height height dimension
 #' @return volume of square pyramid
 #' @export
-square_pyramid_volume <- function(base_area, height){
+volume_square_pyramid <- function(base_area, height){
   if ((!is.numeric(base_area)) |  (!is.numeric(height))){
     stop("Function arguments should be numeric")
   }

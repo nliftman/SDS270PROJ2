@@ -4,7 +4,7 @@
 #' @param height height dimension
 #' @return volume of prism
 #' @export
-prism_volume <- function(base_area, height){
+volume_prism <- function(base_area, height){
   if ((!is.numeric(base_area)) | (!is.numeric(height))){
     stop("Function arguments should be numeric")
   }

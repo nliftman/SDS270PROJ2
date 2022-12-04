@@ -5,7 +5,7 @@
 #' @param height height dimension
 #' @return volume of rectangular solid
 #' @export
-rectangular_solid_volume <- function(length, width, height){
+volume_rectangular_solid <- function(length, width, height){
   if ((!is.numeric(length)) | (!is.numeric(width)) | (!is.numeric(height))){
     stop("Function arguments should be numeric")
   }

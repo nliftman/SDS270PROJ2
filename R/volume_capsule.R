@@ -5,7 +5,7 @@
 #' @param radius radius dimension
 #' @return volume of capsule
 #' @export
-capsule_volume <- function(side_len, radius){
+volume_capsule <- function(side_len, radius){
   if ((!is.numeric(side_len)) | (!is.numeric(radius))){
     stop("Function arguments should be numeric")
   }

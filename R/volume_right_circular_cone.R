@@ -5,7 +5,7 @@
 #' @param height height dimension
 #' @return volume of right circular cone
 #' @export
-right_circular_cone_volume <- function(base_radius, height){
+volume_right_circular_cone <- function(base_radius, height){
   if ((!is.numeric(base_radius)) | (!is.numeric(height))){
     stop("Function arguments should be numeric")
   }

@@ -4,7 +4,7 @@
 #' @param length length of the edge
 #' @return volume of tetrahedron
 #' @export
-tetrahedron_volume <- function(length){
+volume_tetrahedron <- function(length){
   if ((!is.numeric(length))){
     stop("Function arguments should be numeric")
   }

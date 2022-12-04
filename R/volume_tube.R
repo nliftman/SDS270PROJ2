@@ -6,7 +6,7 @@
 #' @param height height dimension
 #' @return volume of tube
 #' @export
-tube_volume <- function(outer_radius, inner_radius, height){
+volume_tube <- function(outer_radius, inner_radius, height){
   if ((!is.numeric(outer_radius)) | (!is.numeric(inner_radius)) | (!is.numeric(height))){
     stop("Function arguments should be numeric")
   }
@@ -17,5 +17,3 @@ tube_volume <- function(outer_radius, inner_radius, height){
     pi*((outer_radius^2) - (inner_radius^2))*height
   }
 }
-
-tube_volume(2,1,2)

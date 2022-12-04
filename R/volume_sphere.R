@@ -4,7 +4,7 @@
 #' @param radius radius dimension
 #' @return volume of sphere
 #' @export
-sphere_volume <- function(radius){
+volume_sphere <- function(radius){
   if ((!is.numeric(radius))){
     stop("Function arguments should be numeric")
   }
