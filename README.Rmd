@@ -9,6 +9,9 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/nliftman/SDS270PROJ2/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nliftman/SDS270PROJ2/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 ## Purpose
 
@@ -22,7 +25,7 @@ There are two target audiences of our package. One is the user who wants R to ru
 
 You can install the development version of shapez like so:
 
-```{r}
+```{r, eval=FALSE}
 remotes::install_github("nliftman/shapez")
 ```
 
