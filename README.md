@@ -2,6 +2,10 @@ shapez
 ================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/nliftman/SDS270PROJ2/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nliftman/SDS270PROJ2/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 ## Purpose
 
@@ -26,20 +30,6 @@ You can install the development version of shapez like so:
 remotes::install_github("nliftman/shapez")
 ```
 
-    ## Downloading GitHub repo nliftman/shapez@HEAD
-
-    ##      checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpsUgdJH/remotes56d96a553353/nliftman-shapez-bca685f/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/s2/z0sw3xg117xbx4ylqd5q9d9w0000gn/T/RtmpsUgdJH/remotes56d96a553353/nliftman-shapez-bca685f/DESCRIPTION’
-    ##   ─  preparing ‘shapez’:
-    ##      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-    ##   ─  checking for LF line-endings in source and make files and shell scripts
-    ##   ─  checking for empty or unneeded directories
-    ##   ─  building ‘shapez_0.0.0.9000.tar.gz’
-    ##      
-    ## 
-
-    ## Installing package into '/Users/naomiliftman/Library/R/x86_64/4.2/library'
-    ## (as 'lib' is unspecified)
-
 ## Examples
 
 ### Area
@@ -48,10 +38,8 @@ Calculations of area of a circle:
 
 ``` r
 library(shapez)
-area_circle(4)
+#area_circle(4)
 ```
-
-    ## [1] 50.26548
 
 Calculations of area of a pentagon:
 
@@ -75,7 +63,7 @@ Calculations of volume of sphere:
 
 ``` r
 library(shapez)
-sphere_volume(7)
+volume_sphere(7)
 ```
 
     ## [1] 1436.755
@@ -83,7 +71,7 @@ sphere_volume(7)
 Calculations of volume of square pyramid:
 
 ``` r
-square_pyramid_volume(2, 2)
+volume_square_pyramid(2, 2)
 ```
 
     ## [1] 2.666667
@@ -91,7 +79,7 @@ square_pyramid_volume(2, 2)
 Calculations of volume of tetrahedron:
 
 ``` r
-tetrahedron_volume(1982)
+volume_tetrahedron(1982)
 ```
 
     ## [1] 917581613
