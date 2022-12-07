@@ -20,5 +20,5 @@ Graph of the area of a trapezoid
 A simple function to graph a trapezoid.
 }
 \examples{
-graph_trapezoid(2, 4)
+graph_trapezoid(2, 4, 3)
 }
