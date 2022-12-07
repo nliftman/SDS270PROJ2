@@ -32,11 +32,11 @@ remotes::install_github("nliftman/shapez")
 ## Examples 
 ### Area
 
-Calculations of area of a circle: 
+Calculations of area of a circle with a graph: 
 
 ```{r example}
 library(shapez)
-area_circle(4)
+area_circle(4, 1)
 ```
 
 Calculations of area of a pentagon:

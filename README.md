@@ -34,12 +34,16 @@ remotes::install_github("nliftman/shapez")
 
 ### Area
 
-Calculations of area of a circle:
+Calculations of area of a circle with a graph:
 
 ``` r
 library(shapez)
-#area_circle(4)
+area_circle(4, 1)
 ```
+
+![](README_files/figure-gfm/example-1.png)<!-- -->
+
+    ## [1] 50.26548
 
 Calculations of area of a pentagon:
 
