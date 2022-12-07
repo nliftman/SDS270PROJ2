@@ -10,8 +10,8 @@ test_that("find the area of a triangle correctly without a graph", {
   expect_equal(area_triangle(2,2,0), 2)
 })
 
-test_that("find the area of a trapezoid correctly", {
-  expect_equal(area_trapezoid(2,3,4), 10)
+test_that("find the area of a trapezoid correctly without a graph", {
+  expect_equal(area_trapezoid(2,3,4, 0), 10)
 })
 
 test_that("find the area of a pentagon correctly", {

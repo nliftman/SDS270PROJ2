@@ -6,6 +6,7 @@
 #' @param graph Indicator variable for graphing option (0 for no graph, 1 for graph)
 #'
 #' @return The area of the circle with radius x, and the possibility of the circle being graphed.
+#' @import ggplot2
 #' @export
 #'
 #' @examples
