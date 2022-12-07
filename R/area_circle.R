@@ -6,7 +6,6 @@
 #' @param graph Indicator variable for graphing option (0 for no graph, 1 for graph)
 #'
 #' @return The area of the circle with radius x, and the possibility of the circle being graphed.
-#' @import ggplot2
 #' @export
 #'
 #' @examples
@@ -18,14 +17,7 @@ area_circle <- function(x, graph){
   } else{
     z <- pi*x^2
     if(graph == 1){
-      circle_df <- data.frame(x = c(x, 2*x, x, 0),
-                              y = c(0, x, 2*x, x))
-      print(ggplot(circle_df, aes(x, y)) +
-        annotate("path",
-                 x=x+x*cos(seq(0,2*pi,length.out=100)),
-                 y=x+x*sin(seq(0,2*pi,length.out=100)),
-                 color = "#6d4ee9") +
-        coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on"))
+      print(shapez::graph_circle(x))
       return(z)
     }
     else if (graph == 0){

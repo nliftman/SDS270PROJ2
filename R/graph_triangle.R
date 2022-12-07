@@ -4,6 +4,7 @@
 #'
 #' @param x Width of the traingle (positive number)
 #' @param y Height of the triangle (positive number)
+#' @param type Either an isoscoles or right triangle to graph (1,2)
 #'
 #' @return Graph of the area of a triangle
 #' @import ggplot2
