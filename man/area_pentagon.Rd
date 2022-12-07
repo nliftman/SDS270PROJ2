@@ -4,19 +4,21 @@
 \alias{area_pentagon}
 \title{Area of a Regular Pentagon}
 \usage{
-area_pentagon(x, y)
+area_pentagon(x, y, graph)
 }
 \arguments{
 \item{x}{Length of one side of the regular pentagon, also known as a perimeter. (positive number)}
 
 \item{y}{Length from the center of one side of the regular pentagon to the center, also known as the apothem. (positive number)}
+
+\item{graph}{Indicator variable for graphing option (0 for no graph, 1 for graph)}
 }
 \value{
-The area of a regular pentagon with a perimeter x and apothem y.
+The area of a regular pentagon with a perimeter x and apothem y, with posibility to graph the shape.
 }
 \description{
 A simple function to find the area of a regular pentagon
 }
 \examples{
-area_pentagon(2, 3)
+area_pentagon(2, 3, 0)
 }
