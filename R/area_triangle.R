@@ -33,7 +33,7 @@ area_triangle <- function(x,y, graph){
           geom_line(aes(x, y), color = "#6d4ee9" ) +
           geom_segment(x = 0, y = 0, xend = x, yend = 0, color ="#6d4ee9") +
           xlab("Base of Triangle") +
-          ylab("Base of Triangle"))
+          ylab("Height of Triangle"))
       return(z)
     }
     else if (graph == 2){
@@ -45,7 +45,7 @@ area_triangle <- function(x,y, graph){
         geom_line(aes(x, y), color = "#6d4ee9" ) +
         geom_segment(x = 0, y = 0, xend = x, yend = 0, color ="#6d4ee9") +
         xlab("Base of Triangle") +
-        ylab("Base of Triangle"))
+        ylab("Height of Triangle"))
       return(z)
     }
     else{

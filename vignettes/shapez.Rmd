@@ -27,20 +27,66 @@ library(shapez)
 
 This function `area_square(x, y, graph)` gives the simple area of a rectangle, along with, when requested a graph of the rectangle in question. 
 
-The function requires `x`, `y`, and `graph` inputs, where `x` is the width of the rectangle, and `y` is the height. The final input `graph`, asks the user whether they would like the rectangle to be graphed. Inputing a 0 will simply compute the area and not graph the shape, but inputting a 1 will graph the shape. Any other inputs will throw an error. This may help people to visualize what they are measuring. 
+The function requires `x`, `y`, and `graph` inputs, where `x` is the width of the rectangle, and `y` is the height. The final input `graph`, asks the user whether they would like the rectangle to be graphed. If the user inputs a 0, the function will simply compute the area and not graph the shape, but inputting a 1 will graph the shape. 
 
+Any negative or string inputs will throw an error for the `x` and `y` inputs, and anything other than a 0 or 1 will throw an error for the graph. 
+
+The main purpose of the graph is to help people visualize what area is being measuring. 
+
+This calculates the area of a rectangle with no graph.
 ```{r}
 area_rectangle(3, 5, 0)
 ```
 
+This calculates the area of a rectangle and includes a graph.
 ```{r}
 area_rectangle(3, 5, 1)
 ```
 
-
 ### Area of a Circle
 
+This function `area_circle(x, graph)` gives the simple area of a circle, along with, when requested a graph of the circle in question. 
+
+The function requires `x`, and `graph` inputs, where `x` is the radius of the circle. The other input `graph`, asks the user whether they would like the shape to be graphed. Imputing a 0 will simply compute the area and not graph the shape, but inputting a 1 will graph the shape. 
+
+Any negative or string inputs will throw an error for the `x` input, and anything other than a 0 or 1 will throw an error for the graph. 
+
+The main purpose of the graph is to help people visualize what area is being measuring. 
+
+This calculates the area of a rectangle with no graph.
+```{r}
+area_circle(3, 0)
+```
+
+This calculates the area of a rectangle and includes a graph.
+```{r}
+area_circle(3, 1)
+```
+
 ### Area of a Triangle
+
+This function `area_triangle(x, y, graph)` gives the simple area of a triangle, along with, when requested a graph of the triangle in question. 
+
+The function requires `x`, `y`, and `graph` inputs, where `x` is the base of the triangle, and `y` is the height. The final input `graph`, asks the user whether they would like the triangle to be graphed. Imputing a 0 will simply compute the area and not graph the shape; however, the user must know whether the triangle is a right or isosceles triangle to graph it. Inputting a 1 indicates that the triangle is an isosceles and inputting a 2 indicates it is a right triangle, and they will be graphed as such. 
+
+Any negative or string inputs will throw an error for the `x` and `y` inputs, and anything other than a 0 or 1 will throw an error for the graph. 
+
+The main purpose of the graph is to help people visualize what area is being measuring. 
+
+This calculates the area of a triangle with no graph.
+```{r}
+area_triangle(3, 5, 0)
+```
+
+This calculates the area of an isosceles triangle with a graph.
+```{r}
+area_triangle(3, 5, 1)
+```
+
+This calculates the area of an right triangle with a graph.
+```{r}
+area_triangle(3, 5, 2)
+```
 
 ### Area of a Trapezoid
 
