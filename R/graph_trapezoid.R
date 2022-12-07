@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' graph_trapezoid(2, 4)
+#' graph_trapezoid(2, 4, 3)
 graph_trapezoid <- function(x, y, z){
   #build df
   trapezoid_df <- data.frame(x = c(0, y, (y-x)/2, x+((y-x)/2)),
