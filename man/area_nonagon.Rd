@@ -4,12 +4,10 @@
 \alias{area_nonagon}
 \title{Area of a Nonagon}
 \usage{
-area_nonagon(length, graph)
+area_nonagon(length)
 }
 \arguments{
 \item{length}{Length of the regular nonagon (positive number)}
-
-\item{graph}{0 or 1, with 1 requesting a graph and 0 not (indicator variable)}
 }
 \value{
 The area of a nonagon with given length and a graph of the square if indicated

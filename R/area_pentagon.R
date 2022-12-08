@@ -16,7 +16,7 @@ area_pentagon <- function(length, apothem, graph){
     stop("Both length and apothem of a pentagon must be positive and numeric!")
   }
   else{
-    t <- {(1/4)*(sqrt(5(5+2*sqrt(5))))*length^2}
+    t <- {(1/4)*(sqrt(5*(5+2*sqrt(5))))*length^2}
     if(graph == 1){
       print(shapez::graph_pentagon(length, apothem))
     }

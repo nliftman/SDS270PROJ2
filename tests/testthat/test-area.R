@@ -15,13 +15,17 @@ test_that("find the area of a trapezoid correctly without a graph", {
 })
 
 test_that("find the area of a pentagon correctly, without a graph", {
-  expect_equal(area_pentagon(2,2, 0), 2)
+  expect_equal(area_pentagon(2,2, 0), 6.8819096)
 })
 
 test_that("find the area of a hexagon correctly, without a graph", {
   expect_equal(area_hexagon(3,0), 23.382686)
 })
 
-test_that("find the area of a octogon correctly, without a graph", {
+test_that("find the area of an octogon correctly, without a graph", {
   expect_equal(area_octagon(3, 0), 43.455844)
+})
+
+test_that("find the area of a nonagon correctly, without a graph", {
+  expect_equal(area_nonagon(3), 55.636418)
 })
