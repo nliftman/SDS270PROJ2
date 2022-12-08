@@ -4,10 +4,12 @@
 \alias{area_octagon}
 \title{Area of a Regular Octagon}
 \usage{
-area_octagon(x)
+area_octagon(x, graph)
 }
 \arguments{
 \item{x}{Length of one side of the regular octagon (positive number)}
+
+\item{graph}{Indicator variable for graphing option (0 for no graph, 1 for graph)}
 }
 \value{
 The area of a regular octagon with side lengths x.
@@ -16,5 +18,5 @@ The area of a regular octagon with side lengths x.
 A simple function to find the area of a regular octagon
 }
 \examples{
-area_octagon(3)
+area_octagon(3, 0 )
 }
