@@ -30,10 +30,10 @@ graph_triangle <- function(x, y, type){
     traingle_df <- data.frame(x = c(0, 0, x),
                               y = c(0, y, 0))
 
-    print(ggplot(data = traingle_df) +
+    ggplot(data = traingle_df) +
             geom_line(aes(x, y), color = "#6d4ee9" ) +
             geom_segment(x = 0, y = 0, xend = x, yend = 0, color ="#6d4ee9") +
             xlab("Base of Triangle") +
-            ylab("Height of Triangle"))
+            ylab("Height of Triangle")
   }
 }

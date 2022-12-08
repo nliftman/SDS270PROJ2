@@ -167,7 +167,36 @@ This calculates the area of a hexagon and includes a graph.
 area_octagon(17,1)
 ```
 
-
 ## Volume Functions
+### Volume Cube
+
+The function `volume_cube(length)` calculates the volume of a cube with the provided dimensions. The user must provide the `length` dimension, which is the length of one edge of the cube. 
+
+```{r}
+volume_cube(34)
+```
+
+### Volume Cylinder
+
+The function `volume_cylinder(base_radius, height)`
+
+### Volume Tube
+
+### Volume Ellipsoid
+
+### Volume Sphere
+
+### Volume Hemisphere
+
+### Volume Capsule
+
+### Volume Prism
+
+### Volume Rectangular Solid
+
+### Volume Circular Cone
+
+### Volume Tetrahedron
+
 
 
