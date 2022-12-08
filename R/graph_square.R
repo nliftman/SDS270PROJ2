@@ -19,7 +19,7 @@ graph_square <- function(x, y){
   ggplot(data = square_df) +
     geom_line(aes(x, y), color = "#6d4ee9" ) +
     geom_segment(x = 0, y = 0, xend = x, yend = 0, color ="#6d4ee9") +
-    xlab("Width of Square") +
-    ylab("Height of Square") +
+    xlab("Width of Rectangle") +
+    ylab("Height of Rectangle") +
     coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on")
 }
