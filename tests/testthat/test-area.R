@@ -18,8 +18,8 @@ test_that("find the area of a pentagon correctly, without a graph", {
   expect_equal(area_pentagon(2,2, 0), 2)
 })
 
-test_that("find the area of a hexagon correctly", {
-  expect_equal(area_hexagon(3), 23.382686)
+test_that("find the area of a hexagon correctly, without a graph", {
+  expect_equal(area_hexagon(3,0), 23.382686)
 })
 
 test_that("find the area of a octogon correctly", {
