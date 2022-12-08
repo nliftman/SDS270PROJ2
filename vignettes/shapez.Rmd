@@ -27,7 +27,7 @@ library(shapez)
 
 This function `area_square(x, y, graph)` gives the simple area of a rectangle, along with, when requested a graph of the rectangle in question. 
 
-The function requires `x`, `y`, and `graph` inputs, where `x` is the width of the rectangle, and `y` is the height. The final input `graph`, asks the user whether they would like the rectangle to be graphed. If the user inputs a 0, the function will simply compute the area and not graph the shape, but inputting a 1 will graph the shape. 
+The function requires `x`, `y`, and `graph` inputs, where `x` is the width of the rectangle, and `y` is the height. The final input `graph`, asks the user whether they would like the rectangle to be graphed. If the user inputs a 0, the function will simply compute the area and not graph the shape, but inputting a 1 will graph the shape.
 
 Any negative or string inputs will throw an error for the `x` and `y` inputs, and anything other than a 0 or 1 will throw an error for the graph. 
 
@@ -46,7 +46,6 @@ area_rectangle(3, 5, 1)
 ### Area of a Circle
 
 This function `area_circle(x, graph)` gives the simple area of a circle, along with, when requested a graph of the circle in question. 
-
 The function requires `x`, and `graph` inputs, where `x` is the radius of the circle. The other input `graph`, asks the user whether they would like the shape to be graphed. Imputing a 0 will simply compute the area and not graph the shape, but inputting a 1 will graph the shape. 
 
 Any negative or string inputs will throw an error for the `x` input, and anything other than a 0 or 1 will throw an error for the graph. 
@@ -90,11 +89,84 @@ area_triangle(3, 5, 2)
 
 ### Area of a Trapezoid
 
+This function `area_trapezoid(x, y, z, graph)` gives the simple area of a trapezoid along with, when requested, a graph of the trapezoid in question. 
+
+The function requires `x`, `y`, `z`, and `graph` inputs, where `x` is the length of the smaller base, `y` is the length of the longer base, and `z` being the height. The final input `graph`, asks the user whether they would like the trapezoid to be graphed. If the user inputs a 0, the function will simply compute the area and not graph the shape, but inputting a 1 will graph the shape. 
+
+Any negative or string inputs will throw an error for the `x`, `y`, and `z` inputs, and anything other than a 0 or 1 will throw an error for the graph. 
+
+The main purpose of the graph is to help people visualize what area is being measuring. 
+
+This calculates the area of a trapezoid with no graph.
+```{r}
+area_trapezoid(24, 2459, 4, 0)
+```
+
+This calculates the area of a trapezoid and includes a graph.
+```{r}
+area_trapezoid(24, 2459, 4, 1)
+```
+
 ### Area of a Pentagon
+
+This function `area_pentagon(x, y, graph)` gives the simple area of a regular pentagon, along with, when requested a graph of the pentagon in question. 
+
+The function requires `x`, `y`, and `graph` inputs, where `x` is the side length of the pentagon, and `y` is the apothem. The final input `graph`, asks the user whether they would like the pentagon to be graphed. If the user inputs a 0, the function will simply compute the area and not graph the shape, but inputting a 1 will graph the shape.
+
+Any negative or string inputs will throw an error for the `x` and `y` inputs, and anything other than a 0 or 1 will throw an error for the graph. 
+
+The main purpose of the graph is to help people visualize what area is being measuring. 
+
+This calculates the area of a pentagon with no graph.
+```{r}
+area_pentagon(4,6,0)
+```
+
+This calculates the area of a pentagon and includes a graph.
+```{r}
+area_pentagon(4,6,1)
+```
 
 ### Area of a Hexagon
 
+This function `area_pentagon(x, graph)` gives the simple area of a regular hexagon, along with, when requested a graph of the hexagon in question. 
+
+The function requires `x`, and `graph` inputs, where `x` is the side length of the regular hexagon. The other input `graph`, asks the user whether they would like the hexagon to be graphed. If the user inputs a 0, the function will simply compute the area and not graph the shape, but inputting a 1 will graph the shape.
+
+Any negative or string inputs will throw an error for the `x` and `y` inputs, and anything other than a 0 or 1 will throw an error for the graph. 
+
+The main purpose of the graph is to help people visualize what area is being measuring. 
+
+This calculates the area of a hexagon with no graph.
+```{r}
+area_hexagon(4,0)
+```
+
+This calculates the area of a hexagon and includes a graph.
+```{r}
+area_hexagon(4,1)
+```
+
 ### Area of a Octagon
+
+This function `area_octagon(x, graph)` gives the simple area of a regular octagon, along with, when requested a graph of the octagon in question. 
+
+The function requires `x`, and `graph` inputs, where `x` is the side length of the regular octagon. The other input `graph`, asks the user whether they would like the octagon to be graphed. If the user inputs a 0, the function will simply compute the area and not graph the shape, but inputting a 1 will graph the shape.
+
+Any negative or string inputs will throw an error for the `x` and `y` inputs, and anything other than a 0 or 1 will throw an error for the graph. 
+
+The main purpose of the graph is to help people visualize what area is being measuring. 
+
+This calculates the area of a octagon with no graph.
+```{r}
+area_octagon(17,0)
+```
+
+This calculates the area of a hexagon and includes a graph.
+```{r}
+area_octagon(17,1)
+```
+
 
 ## Volume Functions
 

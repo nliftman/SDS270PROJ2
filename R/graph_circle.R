@@ -14,10 +14,11 @@ graph_circle <- function(x){
   #build df
   circle_df <- data.frame(x = c(x, 2*x, x, 0),
                           y = c(0, x, 2*x, x))
-  print(ggplot(circle_df, aes(x, y)) +
-          annotate("path",
+  ggplot(circle_df, aes(x, y)) +
+    geom_point(aes(x,y))+
+    annotate("path",
                    x=x+x*cos(seq(0,2*pi,length.out=100)),
                    y=x+x*sin(seq(0,2*pi,length.out=100)),
                    color = "#6d4ee9") +
-          coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on"))
+    coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on")
 }

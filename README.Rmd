@@ -39,14 +39,14 @@ library(shapez)
 area_circle(4, 1)
 ```
 
-Calculations of area of a pentagon:
+Calculations of area of a pentagon without a graph:
 ```{r}
-area_pentagon(3, 4)
+area_pentagon(3, 4, 0)
 ```
 
-Calculations of area of octagon:
+Calculations of area of octagon with a graph:
 ```{r}
-area_octagon(6)
+area_octagon(6, 1)
 ```
 
 ### Volume
