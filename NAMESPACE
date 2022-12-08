@@ -2,6 +2,7 @@
 
 export(area_circle)
 export(area_hexagon)
+export(area_nonagon)
 export(area_octagon)
 export(area_pentagon)
 export(area_rectangle)
