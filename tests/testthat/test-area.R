@@ -14,8 +14,8 @@ test_that("find the area of a trapezoid correctly without a graph", {
   expect_equal(area_trapezoid(2,3,4, 0), 10)
 })
 
-test_that("find the area of a pentagon correctly", {
-  expect_equal(area_pentagon(2,2), 2)
+test_that("find the area of a pentagon correctly, without a graph", {
+  expect_equal(area_pentagon(2,2, 0), 2)
 })
 
 test_that("find the area of a hexagon correctly", {

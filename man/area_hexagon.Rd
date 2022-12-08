@@ -4,17 +4,20 @@
 \alias{area_hexagon}
 \title{Area of a Regular Hexagon}
 \usage{
-area_hexagon(x)
+area_hexagon(x, graph)
 }
 \arguments{
 \item{x}{Length of one side of the regular hexagon. (positive number)}
+
+\item{graph}{Indicator variable for graphing option (0 for no graph, 1 for graph)}
 }
 \value{
-The area of a regular hexagon with side lengths x.
+The area of a regular hexagon with side lengths x, and the option of graphing.
 }
 \description{
 A simple function to find the area of a regular hexagon
 }
 \examples{
-area_hexagon(3)
+area_hexagon(3, 0)
+area_hexagon(3, 1)
 }

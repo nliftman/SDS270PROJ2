@@ -3,19 +3,27 @@
 #' A simple function to find the area of a regular hexagon
 #'
 #' @param x Length of one side of the regular hexagon. (positive number)
+#' @param graph Indicator variable for graphing option (0 for no graph, 1 for graph)
 #'
-#' @return The area of a regular hexagon with side lengths x.
+#' @return The area of a regular hexagon with side lengths x, and the option of graphing.
 #' @export
 #'
 #' @examples
-#' area_hexagon(3)
-area_hexagon <- function(x){
+#' area_hexagon(3, 0)
+#' area_hexagon(3, 1)
+area_hexagon <- function(x, graph){
   if (!is.numeric(x) | x < 0 ){
     stop("Side lengths of hexagons must be positive and numeric!")
   }
   else{
     t <- {(3*sqrt(3))/2}*x^2
-    return(t)
+    if (graph == 0){
+      return(t)
+    }
+    else if (graph == 1){
+      print(shapez::graph_hexagon(x))
+      return(t)
+    }
   }
 }
 
