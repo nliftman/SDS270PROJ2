@@ -12,18 +12,22 @@
 #' @examples
 #' graph_pentagon(2, 4)
 graph_pentagon <- function(x, y){
-  #build df
-  p = ((2*y - x)/2)
-  pentagon_df <- data.frame(x = c(0, p, x+p, 2*p+x, y),
-                            y = c(y, 0, 0, y, 2*y ))
+  #degrees to radians
+  #r = (d*pi)/180
+  base_total = (sin((108*pi)/(180))*x)/(sin((36*pi)/(180)))
+  a = (base_total-x)/2
+  b = sqrt(x^2 - a^2)
+
+  pentagon_df <- data.frame(x = c(0, a, a+x, 2*a+x, base_total/2),
+                            y = c(b, 0, 0, b, 2*b))
 
   ggplot(data = pentagon_df, aes(x, y)) +
     geom_point(data = pentagon_df, aes(x,y)) +
-    geom_segment(x = p, y = 0, xend = x+p, yend = 0, color ="#6d4ee9")+
-    geom_segment(x = x+p, y = 0, xend = 2*p +x, yend = y, color ="#6d4ee9")+
-    geom_segment(x = 2*p + x, y = y, xend = y, yend = 2*y, color ="#6d4ee9") +
-    geom_segment(x = y, y = 2*y, xend = 0, yend = y, color ="#6d4ee9") +
-    geom_segment(x = 0, y = y, xend = p, yend = 0, color ="#6d4ee9") +
+    geom_segment(x = 0, y = b, xend = a, yend = 0, color ="#6d4ee9")+
+    geom_segment(x = a, y = 0, xend = a+x, yend = 0, color ="#6d4ee9")+
+    geom_segment(x = a+x, y = 0, xend = 2*a+x, yend = b, color ="#6d4ee9") +
+    geom_segment(x = 2*a+x, y = b, xend = (base_total/2), yend = 2*b, color ="#6d4ee9") +
+    geom_segment(x = (base_total/2), y = 2*b, xend = 0, yend = b, color ="#6d4ee9") +
     xlab("Width of Pentagon") +
     ylab("Height of Pentagon") +
     coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on")
