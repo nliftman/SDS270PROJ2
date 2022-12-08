@@ -20,5 +20,7 @@ graph_circle <- function(x){
                    x=x+x*cos(seq(0,2*pi,length.out=100)),
                    y=x+x*sin(seq(0,2*pi,length.out=100)),
                    color = "#6d4ee9") +
+    xlab("Diameter of Circle on x-axis") +
+    ylab("Diameter of Circle on y-axis") +
     coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on")
 }

@@ -4,22 +4,22 @@
 \alias{area_rectangle}
 \title{Area of a Rectangle}
 \usage{
-area_rectangle(x, y, graph)
+area_rectangle(width, height, graph)
 }
 \arguments{
-\item{x}{Width of the rectangle (positive number)}
+\item{width}{Width of the rectangle (positive number)}
 
-\item{y}{Height of the rectangle (positive number)}
+\item{height}{Height of the rectangle (positive number)}
 
 \item{graph}{0 or 1, with 1 requesting a graph and 0 not (indicator variable)}
 }
 \value{
-The area of a rectangle with width x and height y, and a graph of the square if requested.
+The area of a rectangle with width x and height y, and a graph of the square if indicated
 }
 \description{
-A simple function to find the area of a rectangle.
+A simple function to find the area of a rectangle
 }
 \examples{
-area_rectangle(5,4, 0)
-area_rectangle(5,4, 1)
+area_rectangle(5, 4, 0)
+area_rectangle(5, 4, 1)
 }

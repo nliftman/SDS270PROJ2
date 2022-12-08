@@ -4,12 +4,12 @@
 \alias{graph_pentagon}
 \title{Graph Pentagon}
 \usage{
-graph_pentagon(x, y)
+graph_pentagon(length, apothem)
 }
 \arguments{
-\item{x}{Length of one side of the regular pentagon, also known as a perimeter. (positive number)}
+\item{length}{Length of one side of the regular pentagon, also known as a perimeter. (positive number)}
 
-\item{y}{Length from the center of one side of the regular pentagon to the center, also known as the apothem. (positive number)}
+\item{apothem}{Length from the center of one side of the regular pentagon to the center, also known as the apothem. (positive number)}
 }
 \value{
 Graph of the area of a pentagon

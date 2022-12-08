@@ -27,7 +27,7 @@ graph_octagon <- function(x){
     geom_segment(x = 2*a+x, y = a+x, xend = a+x, yend = 2*a+x, color ="#6d4ee9") +
     geom_segment(x = a+x, y = 2*a+x, xend = a, yend = 2*a+x, color ="#6d4ee9") +
     geom_segment(x = a, y = 2*a+x, xend = 0, yend = a+x, color ="#6d4ee9") +
-    xlab("Width of Square") +
-    ylab("Height of Square") +
+    xlab("Width of Octagon") +
+    ylab("Height of Octagon") +
     coord_fixed(ratio = 1, xlim = NULL, ylim = NULL, expand = TRUE, clip = "on")
 }

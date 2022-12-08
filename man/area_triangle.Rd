@@ -4,20 +4,20 @@
 \alias{area_triangle}
 \title{Area of a Triangle}
 \usage{
-area_triangle(x, y, graph)
+area_triangle(base, height, graph)
 }
 \arguments{
-\item{x}{Length of the base of the triangle. (positive number)}
+\item{base}{Length of the base of the triangle (positive number)}
 
-\item{y}{Height of the triangle, which creates a 90 degree angle with the base. (positive number)}
+\item{height}{Height of the triangle, which creates a 90 degree angle with the base (positive number)}
 
-\item{graph}{Indicator variable to graph. 0 correlates to not creating a graph, 1 is to graph an isosceles triangle, and 2 is to graph a right triangle.}
+\item{graph}{Indicator variable to graph (0 correlates to not creating a graph, 1 is to graph an isosceles triangle, and 2 is to graph a right triangle)}
 }
 \value{
-The area of a triangle with a base of x and height of y, along with a graph if indicated.
+The area of a triangle with a base of x and height of y, along with a graph if indicated
 }
 \description{
-A simple function to find the area of a triangle.
+A simple function to find the area of a triangle
 }
 \examples{
 area_triangle(2, 4, 0)

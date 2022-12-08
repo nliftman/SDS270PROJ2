@@ -4,19 +4,19 @@
 \alias{area_trapezoid}
 \title{Area of a Regular Trapezoid}
 \usage{
-area_trapezoid(x, y, z, graph)
+area_trapezoid(base_1, base_2, height, graph)
 }
 \arguments{
-\item{x}{Length of the smaller base of the regular trapezoid. (positive number)}
+\item{base_1}{Length of the bottom base of the regular trapezoid (positive number)}
 
-\item{y}{Length of the larger base of the regular trapezoid. (positive number)}
+\item{base_2}{Length of the top base of the regular trapezoid (positive number)}
 
-\item{z}{Height of the regular trapezoid, which creates a 90 degree angle between both bases. (positive number)}
+\item{height}{Height of the regular trapezoid, which creates a 90 degree angle between both bases (positive number)}
 
 \item{graph}{Indicator variable where 0 indicates no graph and 1 indicates graph (indicator variable)}
 }
 \value{
-The area of a regular trapezoid with a bases of x and y and height of z.
+The area of a regular trapezoid with the given measurements, and a graph when indicated
 }
 \description{
 A simple function to find the area of a regular trapezoid
