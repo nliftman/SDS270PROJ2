@@ -4,10 +4,10 @@
 \alias{volume_square_pyramid}
 \title{Calculates the volume of a square pyramid with the provided dimensions}
 \usage{
-volume_square_pyramid(base_area, height)
+volume_square_pyramid(side_len, height)
 }
 \arguments{
-\item{base_area}{area of base}
+\item{side_len}{side length of base}
 
 \item{height}{height dimension}
 }

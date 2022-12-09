@@ -32,9 +32,6 @@ test_that("find the volume of a square pyramid correctly", {
 })
 
 
-test_that("find the volume of a right circular cone correctly", {
-  expect_equal(volume_right_circular_cone(4, 0.234), 3.9207076)
-})
 
 
 test_that("find the volume of a ellipsoid correctly", {
