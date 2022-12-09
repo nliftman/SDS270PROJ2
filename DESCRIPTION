@@ -18,5 +18,5 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Imports: 
-    ggplot2
+    ggplot2, purrr
 VignetteBuilder: knitr
