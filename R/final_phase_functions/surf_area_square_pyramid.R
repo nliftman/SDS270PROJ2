@@ -1,11 +1,11 @@
 
-#' Calculates the volume of a square pyramid with the provided dimensions
+#' Calculates the surface area of a square pyramid with the provided dimensions
 #'
 #' @param side_len side length of base
 #' @param height height dimension
 #' @return volume of square pyramid
 #' @export
-volume_square_pyramid <- function(side_len, height){
+surf_area_square_pyramid <- function(side_len, height){
   if ((!is.numeric(side_len)) |  (!is.numeric(height))){
     stop("Function arguments should be numeric")
   }
@@ -13,6 +13,6 @@ volume_square_pyramid <- function(side_len, height){
     stop("Function arguments should be greater than or equal to 0")
   }
   else{
-    (1/3)*side_len^2*height
+    side_len*(side_len + sqrt(side_len^2 + 4*height^2))
   }
 }

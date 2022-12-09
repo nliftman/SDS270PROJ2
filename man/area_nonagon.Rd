@@ -7,7 +7,7 @@
 area_nonagon(length)
 }
 \arguments{
-\item{length}{Length of the regular nonagon (positive number)}
+\item{length}{Length of one side of the regular nonagon (positive number)}
 }
 \value{
 The area of a nonagon with given length and a graph of the square if indicated
@@ -16,6 +16,5 @@ The area of a nonagon with given length and a graph of the square if indicated
 A simple function to find the area of a regular nonagon
 }
 \examples{
-area_nonagon(5, 0)
-area_nonagon(5, 1)
+area_nonagon(5)
 }
