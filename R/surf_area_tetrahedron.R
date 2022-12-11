@@ -4,7 +4,7 @@
 #' @param length length of the edge
 #' @return surface area of tetrahedron
 #' @export
-surf_area__tetrahedron <- function(length){
+surf_area_tetrahedron <- function(length){
   if ((!is.numeric(length))){
     stop("Function arguments should be numeric")
   }

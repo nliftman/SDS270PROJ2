@@ -16,4 +16,4 @@ surf_area_capsule <- function(side_len, radius){
     (2*pi*radius*((2*radius)+side_len))
   }
 }
-
+surf_area_capsule(2,3)

@@ -45,19 +45,21 @@ area_circle(4, 1)
 
     ## [1] 50.26548
 
-Calculations of area of a pentagon:
+Calculations of area of a pentagon without a graph:
 
 ``` r
-area_pentagon(3, 4)
+area_pentagon(3, 4, 0)
 ```
 
-    ## [1] 3.5
+    ## [1] 15.4843
 
-Calculations of area of octagon:
+Calculations of area of octagon with a graph:
 
 ``` r
-area_octagon(6)
+area_octagon(6, 1)
 ```
+
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
     ## [1] 173.8234
 
