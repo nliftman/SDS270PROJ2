@@ -24,6 +24,9 @@ library(shapez)
 ```
 
 ## Area Functions
+
+The area functions allow for calculating the area of, and graphing, common two-dimensional shapes.
+
 ### Area of a Rectangle
 
 This function `area_square(width, height, graph)` calculates the area of a rectangle, along with, when requested a graph of the rectangle in question. 
@@ -172,8 +175,24 @@ This calculates the area of a hexagon and includes a graph.
 area_octagon(17,1)
 ```
 
+### Area Nanogon
+
+This function `area_nonagon(length)` calculates the area of a $regular$ nonagon. It requires the input `lenght`, which is teh length of one side of the regular nonagon. 
+
+Any negative or string inputs will throw an error for the `length` inputs. And this is the only area function without an accompanying graph. 
+
+This calculates the area of a nonagon.
+```{r}
+area_nonagon(5)
+```
+
+
 ## Volume Functions
-### Volume Cube
+
+The volume functions allow for the calculation of volumes and surface areas of common three-dimensional shapes.
+
+### Cube
+#### Volume Cube
 
 The function `volume_cube(length)` calculates the volume of a cube with the provided dimensions. The user must provide the `length` dimension, which is the length of one edge of the cube. 
 
@@ -183,7 +202,18 @@ The inputs for all of these parameters must be numeric and greater than 0, or th
 volume_cube(5)
 ```
 
-### Volume Cylinder
+#### Surface Area Cube
+
+The function `surf_area_cube(side_len)` calculates the surface area of a cube with the provided dimension. The user must provide the `side_len` dimension, which is the length of one edge of the cube.
+
+The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+
+```{r}
+surf_area_cube(5)
+```
+
+### Cylinder
+#### Volume Cylinder
 
 The function `volume_cylinder(base_radius, height)` calculates the volume of a cylinder with the provided dimensions. The user provides the `base_radius` which is the radius of the circular base, and the `height` of the cylinder.
 
@@ -191,6 +221,16 @@ The inputs for all of these parameters must be numeric and greater than 0, or th
 
 ```{r}
 volume_cylinder(2, 7)
+```
+
+#### Surface Area Cylinder
+
+The function `surf_area_cylinder(base_radius, height)` calculates the surface area of a cube with the provided dimension. The user must provide the `base_radius` dimension, which is the radius of the base of the cylinder, and the `height` dimension, which is the height.
+
+The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+
+```{r}
+surf_area_cylinder(2,7)
 ```
 
 ### Volume Sphere
