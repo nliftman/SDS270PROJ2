@@ -225,15 +225,16 @@ volume_cylinder(2, 7)
 
 #### Surface Area Cylinder
 
-The function `surf_area_cylinder(base_radius, height)` calculates the surface area of a cube with the provided dimension. The user must provide the `base_radius` dimension, which is the radius of the base of the cylinder, and the `height` dimension, which is the height.
+The function `surf_area_cylinder(base_radius, height)` calculates the surface area of a cylinder with the provided dimension. The user must provide the `base_radius` dimension, which is the radius of the base of the cylinder, and the `height` dimension, which is the height.
 
 The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-surf_area_cylinder(2,7)
+surf_area_cylinder(2, 7)
 ```
 
-### Volume Sphere
+### Sphere
+#### Volume Sphere
 
 The function `volume_sphere(radius)` calculates the volume of a tube with the given dimensions. The user provides the `radius` which is the radius of the sphere.
 
@@ -243,7 +244,18 @@ The inputs for this parameter must be numeric and greater than 0, or the functio
 volume_sphere(3)
 ```
 
-### Volume Hemisphere
+#### Sufrace Area Sphere 
+
+The function `surf_area_sphere(radius)` calculates the surface area of a sphere with the provided dimension. The user must provide the `radius` dimension, which is the radius of the sphere.
+
+The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+
+```{r}
+surf_area_sphere(3)
+```
+
+### Hemisphere
+#### Volume Hemisphere
 
 The function `volume_hemisphere(base_radius)` calculates the volume of a tube with the given dimensions. The user provides the `base_radius` which is the radius of the base circle.
 
@@ -253,7 +265,19 @@ The inputs for this parameter must be numeric and greater than 0, or the functio
 volume_hemisphere(3)
 ```
 
-### Volume Capsule
+#### Surface Area Hemisphere
+
+The function `surf_area_hemisphere(base_radius)` calculates the surface area of a hemisphere with the provided dimension. The user must provide the `base_radius` dimension, which is the radius of the base of the hemisphere.
+
+The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+
+```{r}
+surf_area_hemisphere(3)
+```
+
+
+### Capsule
+#### Volume Capsule
 
 The function `volume_capsule(side_len, radius)` calculates the volume of a capsule with the given dimensions. The user provides the `side_len`, which is the side length of the capsule, and the `radius` which is the radius dimension.
 
@@ -263,18 +287,39 @@ The inputs for these parameters must be numeric and greater than 0, or the funct
 volume_capsule(3, 5)
 ```
 
+#### Surface Area Capsule
 
-### Volume Rectangular Solid
+The function `surf_area_capsule(side_len, radius)` calculates the surface area of a capsule with the provided dimension. The user must provide the `side_len` dimension, which is the lenght of one side of the capsule, and the `radius` dimension, which is the radius.
+
+The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+
+```{r}
+surf_area_capsule(3,5)
+```
+
+### Rectangular Solid
+#### Volume Rectangular Solid
 
 The function `volume_rectangular_solid(lenght, width, height)` calculates the volume of a solid rectangular shape with the provided dimensions. The user provides the `length`, which is the length of the solid, the `width` which is the width of the solid, and the `height` which is the height dimension of the rectangular solid.
 
 The inputs for these parameters must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-volume_rectangular_solid(20, 5,17)
+volume_rectangular_solid(2, 5, 7)
 ```
 
-### Volume Tetrahedron
+#### Surface Area Rectangular Solid
+
+The function `surf_area_rectangular_solid(lenght, width, height)` calculates the surface area of a rectangular solid with the provided dimension. The user must provide the `length` dimension, which is the length of the base of the solid, the `width`, which is the width of the solid, and the `height` dimension, which is the height.
+
+The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+
+```{r}
+surf_area_rectangular_solid(2, 5, 7)
+```
+
+### Tetrahedron
+#### Volume Tetrahedron
 
 The function `volume_tetrahedron(length)` calculates the volume of a prism with the provided dimension. The user provides the `length`, which is the length of the edge of the tetrahedron.
 
@@ -284,6 +329,15 @@ The inputs for this parameter must be numeric and greater than 0, or the functio
 volume_tetrahedron(10)
 ```
 
+#### Surface Area Tetrahedron
+
+The function `surf_area_tetrahedron(length)` calculates the surface area of a tetrahedron with the provided dimension. The user must provide the `length` dimension, which is the length of the tetrahedron.
+
+The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+
+```{r}
+surf_area_tetrahedron(10)
+```
 
 
 
