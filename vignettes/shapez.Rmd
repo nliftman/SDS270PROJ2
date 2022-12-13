@@ -244,10 +244,6 @@ The inputs for this parameter must be numeric and greater than 0, or the functio
 volume_tetrahedron(10)
 ```
 
-Attempts being made
-
-
-slay
 
 
 
