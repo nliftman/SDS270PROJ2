@@ -34,18 +34,18 @@ Any negative or string inputs will throw an error for the `width` and `height` i
 
 The main purpose of the graph is to help people visualize what area is being measuring. This function calls another function `graph_square(x,y)`, to do the graphing for it. All of the graphing function can be called on their own, but are less user friendly.
 ```{r}
-#graph_square(3,5)
+graph_square(3,5)
 ```
 
 
 This calculates the area of a rectangle with no graph.
 ```{r}
-#area_rectangle(3, 5, 0)
+area_rectangle(3, 5, 0)
 ```
 
 This calculates the area of a rectangle and includes a graph.
 ```{r}
-#area_rectangle(3, 5, 1)
+area_rectangle(3, 5, 1)
 ```
 
 ### Area of a Circle
@@ -59,12 +59,12 @@ The main purpose of the graph is to help people visualize what area is being mea
 
 This calculates the area of a circle with no graph.
 ```{r}
-#area_circle(3, 0)
+area_circle(3, 0)
 ```
 
 This calculates the area of a circle and includes a graph.
 ```{r}
-#area_circle(3, 1)
+area_circle(3, 1)
 ```
 
 ### Area of a Triangle
@@ -79,17 +79,17 @@ The main purpose of the graph is to help people visualize what area is being mea
 
 This calculates the area of a triangle with no graph.
 ```{r}
-#area_triangle(3, 5, 0)
+area_triangle(3, 5, 0)
 ```
 
 This calculates the area of an isosceles triangle with a graph.
 ```{r}
-#area_triangle(3, 5, 1)
+area_triangle(3, 5, 1)
 ```
 
 This calculates the area of an right triangle with a graph.
 ```{r}
-#area_triangle(3, 5, 2)
+area_triangle(3, 5, 2)
 ```
 
 ### Area of a Trapezoid
@@ -104,12 +104,12 @@ The main purpose of the graph is to help people visualize what area is being mea
 
 This calculates the area of a trapezoid with no graph.
 ```{r}
-#area_trapezoid(24, 2459, 4, 0)
+area_trapezoid(2, 3, 4, 0)
 ```
 
 This calculates the area of a trapezoid and includes a graph.
 ```{r}
-#area_trapezoid(24, 2459, 4, 1)
+area_trapezoid(2, 3, 4, 1)
 ```
 
 ### Area of a Pentagon
@@ -124,12 +124,12 @@ The main purpose of the graph is to help people visualize what area is being mea
 
 This calculates the area of a pentagon with no graph.
 ```{r}
-#area_pentagon(4,6,0)
+area_pentagon(4,6,0)
 ```
 
 This calculates the area of a pentagon and includes a graph.
 ```{r}
-#area_pentagon(4,6,1)
+area_pentagon(4,6,1)
 ```
 
 ### Area of a Hexagon
@@ -144,12 +144,12 @@ The main purpose of the graph is to help people visualize what area is being mea
 
 This calculates the area of a hexagon with no graph.
 ```{r}
-#area_hexagon(4,0)
+area_hexagon(4,0)
 ```
 
 This calculates the area of a hexagon and includes a graph.
 ```{r}
-#area_hexagon(4,1)
+area_hexagon(4,1)
 ```
 
 ### Area of a Octagon
@@ -164,12 +164,12 @@ The main purpose of the graph is to help people visualize what area is being mea
 
 This calculates the area of a octagon with no graph.
 ```{r}
-#area_octagon(17,0)
+area_octagon(17,0)
 ```
 
 This calculates the area of a hexagon and includes a graph.
 ```{r}
-#area_octagon(17,1)
+area_octagon(17,1)
 ```
 
 ## Volume Functions
@@ -180,7 +180,7 @@ The function `volume_cube(length)` calculates the volume of a cube with the prov
 The inputs for all of these parameters must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-#volume_cube(5)
+volume_cube(5)
 ```
 
 ### Volume Cylinder
@@ -190,27 +190,7 @@ The function `volume_cylinder(base_radius, height)` calculates the volume of a c
 The inputs for all of these parameters must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-#volume_cylinder(2, 7)
-```
-
-### Volume Tube
-
-The function `volume_tube(outer_radius, inner_radius, height)` calculates the volume of a tube with the given dimensions. The user provides the `outer_radius` which is the radius of the outer circle, the `inner_radius` which is the radius of the inner circle, and the `height` which is the height of the tube. 
-
-The inputs for all of these parameters must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-#volume_tube(7, 3, 5)
-```
-
-### Volume Ellipsoid
-
-The function `volume_ellipsoid(semi_axe_1, semi_axe_2, semi_axe_3)` calculates the volume of a tube with the given dimensions. The user provides the `semi_axe_1` which is the dimension of the first semi-axe of the ellipsoid, the `semi_axe_2` which is the dimension of the second semi-axe of the ellipsoid, and the `semi_axe_3` is the final semi-axe of the ellipsoid. 
-
-The inputs for all of these parameters must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-#volume_ellipsoid(3,5,6)
+volume_cylinder(2, 7)
 ```
 
 ### Volume Sphere
@@ -220,7 +200,7 @@ The function `volume_sphere(radius)` calculates the volume of a tube with the gi
 The inputs for this parameter must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-#volume_sphere(3)
+volume_sphere(3)
 ```
 
 ### Volume Hemisphere
@@ -230,7 +210,7 @@ The function `volume_hemisphere(base_radius)` calculates the volume of a tube wi
 The inputs for this parameter must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-#volume_hemisphere(3)
+volume_hemisphere(3)
 ```
 
 ### Volume Capsule
@@ -240,18 +220,9 @@ The function `volume_capsule(side_len, radius)` calculates the volume of a capsu
 The inputs for these parameters must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-#volume_capsule(3, 5)
+volume_capsule(3, 5)
 ```
 
-### Volume Prism
-
-The function `volume_prism(base_area, height)` calculates the volume of a prism with the provided dimensions. The user provides the `base_area`, which is the area of the base of the prism, and the `height` which is the height dimension.
-
-The inputs for these parameters must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-#volume_prism(20, 5)
-```
 
 ### Volume Rectangular Solid
 
@@ -260,17 +231,7 @@ The function `volume_rectangular_solid(lenght, width, height)` calculates the vo
 The inputs for these parameters must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-#volume_prism(20, 5)
-```
-
-### Volume Circular Cone
-
-The function `volume_right_circular_cone(base_radius, height)` calculates the volume of a circular cone with the provided dimensions. The user provides the `base_radius`, which is the radius of the base of the cone, and the `height` which is the height dimension.
-
-The inputs for this parameter must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-#volume_right_circular_cone(20, 5)
+volume_rectangular_solid(20, 5,17)
 ```
 
 ### Volume Tetrahedron
@@ -280,7 +241,7 @@ The function `volume_tetrahedron(length)` calculates the volume of a prism with 
 The inputs for this parameter must be numeric and greater than 0, or the function will throw an error.
 
 ```{r}
-#volume_tetrahedron(10)
+volume_tetrahedron(10)
 ```
 
 
