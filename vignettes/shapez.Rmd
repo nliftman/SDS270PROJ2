@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 
-This vignette summarizes the various information scattered throughout the R documentation and brings it together in one place. It goes through all of the functions in the package, their specifications, and examples.
+This vignette summarizes the various information scattered throughout the R documentation and brings it all together in one place. It goes through all of the functions in the package, their specifications, and examples.
 
 ### Loading the Package 
 
