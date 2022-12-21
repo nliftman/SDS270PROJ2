@@ -264,7 +264,7 @@ The function `square_pyramid(side_len, height, return)` calculates the surface a
 The inputs for these dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
 ```{r}
-square_pyramid(10)
+square_pyramid(10,12)
 ```
 
 
