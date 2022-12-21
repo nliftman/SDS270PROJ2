@@ -189,7 +189,6 @@ area_nonagon(5)
 
 
 
-
 ## Volume/Surface Area Functions
 
 These functions allow for the calculation of volumes and surface areas of some common three-dimensional shapes.
@@ -200,8 +199,20 @@ The function `cube(length, return)` calculates the surface area, or volume, or b
 
 The inputs for all of these parameters must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
+This calculates the volume of a cube.
 ```{r}
 cube(5, "volume")
+```
+
+This calculates the surface area of a cube.
+```{r}
+cube(5, "surface area")
+```
+
+These calculate the volume and surface area of a cube.
+```{r}
+cube(5, "both")
+cube(25)
 ```
 
 ### Capsule
@@ -210,10 +221,21 @@ The function `capsule(side_len, radius, return)` calculates the surface area, or
 
 The inputs for all of these dimension parameters must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
+This calculates the volume of a capsule
+```{r}
+capsule(2, 7, "volume")
+```
+
+This calculates the surface area of a capsule
 ```{r}
 capsule(2, 7, "surface area")
 ```
 
+These calculate the volume and surface area of a capsule
+```{r}
+capsule(2, 7, "both")
+capsule(2, 7)
+```
 
 ### Sphere
 
@@ -221,8 +243,20 @@ The function `sphere(radius, return = ...)` calculates the surface area, or volu
 
 The inputs for this dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
+This calculates the volume of a sphere
 ```{r}
 sphere(3, "volume")
+```
+
+This calculates the surface area of a sphere
+```{r}
+sphere(3, "surface area")
+```
+
+These calculate the volume and surface area of a sphere
+```{r}
+sphere(3, "surface area")
+sphere(3)
 ```
 
 ### Hemisphere
@@ -231,10 +265,22 @@ The function `hemisphere(base_radius, return)` calculates the surface area, volu
 
 The inputs for this dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
+
+This calculates the volume of a hemisphere
 ```{r}
-#volume_hemisphere(3)
+hemisphere(3, "volume")
 ```
 
+This calculates the surface area of a hemisphere
+```{r}
+hemisphere(3, "surface area")
+```
+
+These calculate the volume and surface area of a hemisphere
+```{r}
+hemisphere(3, "both")
+hemisphere(3)
+```
 
 ### Rectangular Prism
 
@@ -242,8 +288,20 @@ The function `rectangular_prism(lenght, width, height, return)` calculates the s
 
 The inputs for these dimension parameters must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
+This calculates the volume of a rectangular prism
 ```{r}
 rectangular_prism(2, 5, 7, "volume")
+```
+
+This calculates the surface area of a rectangular prism
+```{r}
+rectangular_prism(2, 5, 7, "surface area")
+```
+
+These calculate the volume and surface area of a rectangular prism
+```{r}
+rectangular_prism(2, 5, 7, "both")
+rectangular_prism(2, 5, 7)
 ```
 
 ### Tetrahedron
@@ -252,7 +310,19 @@ The function `tetrahedron(length, return)` calculates the surface area, or volum
 
 The inputs for this dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
+This calculates the volume of a tetrahedron
 ```{r}
+tetrahedron(10, "volume")
+```
+
+This calculates the surface area of a tetrahedron
+```{r}
+tetrahedron(10, "surface area")
+```
+
+These calculate the volume and surface area of a tetrahedron
+```{r}
+tetrahedron(10, "both")
 tetrahedron(10)
 ```
 
@@ -263,8 +333,20 @@ The function `square_pyramid(side_len, height, return)` calculates the surface a
 
 The inputs for these dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
+
+This calculates the volume of a square pyramid
 ```{r}
-square_pyramid(10,12)
+square_pyramid(10, 12, "volume")
 ```
 
+This calculates the surface area of a square pyramid
+```{r}
+square_pyramid(10, 12, "surface area")
+```
+
+These calculate the volume and surface area of a square pyramid
+```{r}
+square_pyramid(10, 12, "both")
+square_pyramid(10, 12)
+```
 
