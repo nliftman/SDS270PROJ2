@@ -1,79 +1,30 @@
-test_that("find the volume of a capsule correctly", {
-  expect_equal(volume_capsule(2, 4), 368.61354)
+
+test_that("find the area of a tetrahedron correctly without a graph", {
+  expect_equal(tetrahedron(2), list("volume" = 0.94280904, "surface area" = 6.9282032))
 })
 
-test_that("find the volume of a cube correctly", {
-  expect_equal(volume_cube(2), 8)
+test_that("find the area of a square pyramid correctly without a graph", {
+  expect_equal(square_pyramid(2,3, "both"), list("volume" = 4, "surface area" = 16.6491106))
 })
 
-test_that("find the volume of a rectangular solid correctly", {
-  expect_equal(volume_rectangular_solid(1,2,3), 6)
+test_that("find the area of a sphere correctly without a graph", {
+  expect_equal(sphere(3.5), list("volume" = 179.594380030217, "surface area"= 153.93804))
 })
 
-
-test_that("find the volume of a cylinder correctly", {
-  expect_equal(volume_cylinder(3.45, 4), 149.571226)
+test_that("find the area of a rectangular prism correctly without a graph", {
+  expect_equal(rectangular_prism(3.5, 2, 4), list("volume" = 28, "surface area"= 58))
 })
 
-
-test_that("find the volume of a sphere correctly", {
-  expect_equal(volume_sphere(7), 1436.75504)
+test_that("find the area of a hemisphere correctly without a graph", {
+  expect_equal(hemisphere(21.99), list("volume" = 22270.722, "surface area"= 4557.4466))
 })
 
-
-test_that("find the volume of a hemisphere correctly", {
-  expect_equal(volume_hemisphere(5.5), 348.45499)
+test_that("find the area of a cube correctly without a graph", {
+  expect_equal(cube(4.39), list("volume" = 84.60452, "surface area"= 115.6326))
 })
 
-
-test_that("find the volume of a square pyramid correctly", {
-  expect_equal(volume_square_pyramid(2, 2), 2.6666667)
+test_that("find the area of a capsule correctly without a graph", {
+  expect_equal(capsule(21.99, 100), list("volume" = 4879626.4, "surface area"= 139480.43))
 })
-
-
-test_that("find the volume of a tetrahedron correctly", {
-  expect_equal(volume_tetrahedron(1982), 917581613)
-})
-
-
-test_that("find the surface area of a capsule correctly", {
-  expect_equal(surf_area_capsule(7,3), 245.04423)
-})
-
-
-test_that("find the surface area of a cube correctly", {
-  expect_equal(surf_area_cube(5.5), 181.5)
-})
-
-
-test_that("find the surface area of cylinder correctly", {
-  expect_equal(surf_area_cylinder(2.3, 2), 62.140703)
-})
-
-
-test_that("find the surface area of a semi-sphere correctly", {
-  expect_equal(surf_area_hemisphere(1982), 37023581)
-})
-
-
-test_that("find the surface area of a rectangular solid correctly", {
-  expect_equal(surf_area_rectangular_solid(7,3, 2.444), 90.88)
-})
-
-
-test_that("find the surface area of a sphere correctly", {
-  expect_equal(surf_area_sphere(5.6789), 405.26426)
-})
-
-
-test_that("find the surface area of square pyramid correctly", {
-  expect_equal(surf_area_square_pyramid(2.3, 2), 15.90245)
-})
-
-
-test_that("find the surface area of a tetrahedron correctly", {
-  expect_equal(surf_area_tetrahedron(1982), 6804056.8)
-})
-
 
 

@@ -6,7 +6,7 @@
 #' @param return string input desired return value(s) where the default is "both" volume and surface area
 #' @export
 
-capsule <- function(side_len, radius, return = "both"){
+rectangular_prism <- function(length, width, height, return = "both"){
   if ((!is.numeric(length)) | (!is.numeric(width)) | (!is.numeric(height))){
     stop("Function arguments should be numeric")
   }

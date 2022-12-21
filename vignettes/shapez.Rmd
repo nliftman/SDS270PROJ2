@@ -187,157 +187,84 @@ area_nonagon(5)
 ```
 
 
-## Volume Functions
 
-The volume functions allow for the calculation of volumes and surface areas of common three-dimensional shapes.
+
+
+## Volume/Surface Area Functions
+
+These functions allow for the calculation of volumes and surface areas of some common three-dimensional shapes.
 
 ### Cube
-#### Volume Cube
 
-The function `volume_cube(length)` calculates the volume of a cube with the provided dimensions. The user must provide the `length` dimension, which is the length of one edge of the cube. 
+The function `cube(length, return)` calculates the surface area, or volume, or both of a cube with the provided dimensions. The user must provide the `length` dimension, which is the length of one edge of the cube. There is also a `return` parameter which specifies the desired output result of "volume", "surface area" or "both". The default value is `both`.
 
-The inputs for all of these parameters must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-volume_cube(5)
-```
-
-#### Surface Area Cube
-
-The function `surf_area_cube(side_len)` calculates the surface area of a cube with the provided dimension. The user must provide the `side_len` dimension, which is the length of one edge of the cube.
-
-The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+The inputs for all of these parameters must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
 ```{r}
-surf_area_cube(5)
+cube(5, "volume")
 ```
 
-### Cylinder
-#### Volume Cylinder
+### Capsule
 
-The function `volume_cylinder(base_radius, height)` calculates the volume of a cylinder with the provided dimensions. The user provides the `base_radius` which is the radius of the circular base, and the `height` of the cylinder.
+The function `capsule(side_len, radius, return)` calculates the surface area, or volume, or both of a capsule with the provided dimensions. The user provides `side_len` which is a numeric flat side length of the capsule. Additionally, the numeric`radius` argument is required for the radius of hemisphere shaped part of the capsule dimension. There is also a `return` parameter which specifies the desired output result of "volume", "surface area" or "both". The default value is `both`.
 
-The inputs for all of these parameters must be numeric and greater than 0, or the function will throw an error.
+The inputs for all of these dimension parameters must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
 ```{r}
-volume_cylinder(2, 7)
+capsule(2, 7, "surface area")
 ```
 
-#### Surface Area Cylinder
-
-The function `surf_area_cylinder(base_radius, height)` calculates the surface area of a cylinder with the provided dimension. The user must provide the `base_radius` dimension, which is the radius of the base of the cylinder, and the `height` dimension, which is the height.
-
-The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-surf_area_cylinder(2, 7)
-```
 
 ### Sphere
-#### Volume Sphere
 
-The function `volume_sphere(radius)` calculates the volume of a tube with the given dimensions. The user provides the `radius` which is the radius of the sphere.
+The function `sphere(radius, return = ...)` calculates the surface area, or volume, or both of a sphere with the given dimensions. The user provides the `radius` which is the radius of the sphere. There is also a `return` parameter which specifies the desired output result of "volume", "surface area" or "both". The default value is `both`.
 
-The inputs for this parameter must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-volume_sphere(3)
-```
-
-#### Sufrace Area Sphere 
-
-The function `surf_area_sphere(radius)` calculates the surface area of a sphere with the provided dimension. The user must provide the `radius` dimension, which is the radius of the sphere.
-
-The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+The inputs for this dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
 ```{r}
-surf_area_sphere(3)
+sphere(3, "volume")
 ```
 
 ### Hemisphere
-#### Volume Hemisphere
 
-The function `volume_hemisphere(base_radius)` calculates the volume of a tube with the given dimensions. The user provides the `base_radius` which is the radius of the base circle.
+The function `hemisphere(base_radius, return)` calculates the surface area, volume, or both of a hemisphere with the given dimensions. The user provides the `base_radius` which is the radius of the base circle. There is also a `return` parameter which specifies the desired output result of "volume", "surface area" or "both". The default value is `both`.
 
-The inputs for this parameter must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-volume_hemisphere(3)
-```
-
-#### Surface Area Hemisphere
-
-The function `surf_area_hemisphere(base_radius)` calculates the surface area of a hemisphere with the provided dimension. The user must provide the `base_radius` dimension, which is the radius of the base of the hemisphere.
-
-The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+The inputs for this dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
 ```{r}
-surf_area_hemisphere(3)
+#volume_hemisphere(3)
 ```
 
 
-### Capsule
-#### Volume Capsule
+### Rectangular Prism
 
-The function `volume_capsule(side_len, radius)` calculates the volume of a capsule with the given dimensions. The user provides the `side_len`, which is the side length of the capsule, and the `radius` which is the radius dimension.
+The function `rectangular_prism(lenght, width, height, return)` calculates the surface area, or volume, or both of a rectangular prism with the provided dimensions. The user provides the `length`, which is the length of the solid, the `width` which is the width of the prism, and the `height` which is the height dimension of the rectangular prism There is also a `return` parameter which specifies the desired output result of "volume", "surface area" or "both". The default value is `both`.
 
-The inputs for these parameters must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-volume_capsule(3, 5)
-```
-
-#### Surface Area Capsule
-
-The function `surf_area_capsule(side_len, radius)` calculates the surface area of a capsule with the provided dimension. The user must provide the `side_len` dimension, which is the lenght of one side of the capsule, and the `radius` dimension, which is the radius.
-
-The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+The inputs for these dimension parameters must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
 ```{r}
-surf_area_capsule(3,5)
-```
-
-### Rectangular Solid
-#### Volume Rectangular Solid
-
-The function `volume_rectangular_solid(lenght, width, height)` calculates the volume of a solid rectangular shape with the provided dimensions. The user provides the `length`, which is the length of the solid, the `width` which is the width of the solid, and the `height` which is the height dimension of the rectangular solid.
-
-The inputs for these parameters must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-volume_rectangular_solid(2, 5, 7)
-```
-
-#### Surface Area Rectangular Solid
-
-The function `surf_area_rectangular_solid(lenght, width, height)` calculates the surface area of a rectangular solid with the provided dimension. The user must provide the `length` dimension, which is the length of the base of the solid, the `width`, which is the width of the solid, and the `height` dimension, which is the height.
-
-The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-surf_area_rectangular_solid(2, 5, 7)
+rectangular_prism(2, 5, 7, "volume")
 ```
 
 ### Tetrahedron
-#### Volume Tetrahedron
 
-The function `volume_tetrahedron(length)` calculates the volume of a prism with the provided dimension. The user provides the `length`, which is the length of the edge of the tetrahedron.
+The function `tetrahedron(length, return)` calculates the surface area, or volume, or both of a tetrahedron with the provided dimension. The user provides the `length`, which is the length of the edge of the tetrahedron. There is also a `return` parameter which specifies the desired output result of "volume", "surface area" or "both". The default value is `both`.
 
-The inputs for this parameter must be numeric and greater than 0, or the function will throw an error.
-
-```{r}
-volume_tetrahedron(10)
-```
-
-#### Surface Area Tetrahedron
-
-The function `surf_area_tetrahedron(length)` calculates the surface area of a tetrahedron with the provided dimension. The user must provide the `length` dimension, which is the length of the tetrahedron.
-
-The inputs for all parameters must be numeric and greater than 0, or the function will throw an error.
+The inputs for this dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
 
 ```{r}
-surf_area_tetrahedron(10)
+tetrahedron(10)
 ```
 
+
+### Square Pyramid
+
+The function `square_pyramid(side_len, height, return)` calculates the surface area, or volume, or both of a square pyramid with the provided dimension. The user must provide `side_len` for the side length of the base. Additionally, they must also privde `height` for the height of the pyramid. There is also a `return` parameter which specifies the desired output result of "volume", "surface area" or "both". The default value is `both`.
+
+The inputs for these dimension parameter must be numeric and greater than 0, or the function will throw an error. Moreover, if a `return` argument is provided, it must be a string of either "volume", "surface area" or "both".
+
+```{r}
+square_pyramid(10)
+```
 
 

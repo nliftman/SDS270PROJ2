@@ -17,7 +17,7 @@ square_pyramid <- function(side_len, height, return = "both"){
     stop("Function return argument should be a character type")
   }
   else{
-    volume = pi*radius^2*(((4/3)*radius) + side_len)
+    volume = (1/3)*side_len^2 * height
     surface_area = side_len*(side_len + sqrt(side_len^2 + 4*height^2))
 
     if (return == "both"){
@@ -32,4 +32,3 @@ square_pyramid <- function(side_len, height, return = "both"){
     }
   }
 }
-
