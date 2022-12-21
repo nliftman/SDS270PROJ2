@@ -57,15 +57,20 @@ library(shapez)
 sphere(7, "volume")
 ```
 
-Calculations of volume of tetrahedron:
+Calculations of surface area of sphere:
 ```{r}
-tetrahedron(1982, "surface area")
+sphere(1982, "surface area")
 ```
 
-Calculations of volume & surface area of capsule:
+Calculations of volume & surface area of sphere:
 ```{r}
-capsule(4.999, 10, "both")
+sphere(4.999, 10, "both")
 ```
+or
+```{r}
+sphere(4.999, 10)
+```
+
 ### Dataset
 
 Look at the first 10 prime numbers, and if they are even or odd!
@@ -73,9 +78,4 @@ Look at the first 10 prime numbers, and if they are even or odd!
 ```{r}
 head(primes, 10)
 ```
-
-
-## Package Proposal
-
-We will continue working on this package to do calculations of volume and area; however, we will also start adding more complicated shapes and will be adding perimeter and surface area functions. Additionally, we hope to add functions that find other geometric properties relevant to an individual shape such as base area, diagonal lengths, circumferences, etc. The user would then have an option to display all the relevant properties values for their shape when they call the volume function on it. We also hope to build our functions better, possibly instead of using for loops using the map function. Finally, we hope to add a function to draw the shape being calculated. 
 
